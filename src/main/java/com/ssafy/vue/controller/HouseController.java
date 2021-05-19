@@ -15,7 +15,7 @@ public class HouseController {
 	}
 	
 //	매물 요청
-//	매물 검색/sdfsf
+//	매물 검색/sdfsfsss
 	//test
 	
 }
