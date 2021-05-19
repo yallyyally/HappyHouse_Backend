@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ssafy.vue.dao.HouseMapper">
+
+	<!-- housedeal 전체 조회 -->
+	<select id="getHouseDealList" resultType="housedealdto">
+		SELECT no, dong, aptname,
+		dealamount,buildyear,dealyear,dealmonth,dealday,area,floor,jibun
+		FROM housedeal
+		ORDER BY no DESC
+	</select>
+	
+	<!-- houseinfo 전체 조회 -->
+	<select id="getHouseInfoList" resultType="houseinfodto">
+		SELECT no, dong, aptname, buildyear, jibun, lat, lng
+		FROM
+		houseinfo
+		ORDER BY no DESC
+	</select>
+
+
+</mapper>

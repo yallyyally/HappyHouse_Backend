@@ -23,7 +23,7 @@ import com.ssafy.vue.service.BoardService;
 import io.swagger.annotations.ApiOperation;
 
 //http://localhost:9999/vue/swagger-ui.html
-@CrossOrigin(origins = { "http://localhost:8081" }, maxAge = 6000)
+@CrossOrigin(origins = { "*" }, maxAge = 6000)
 
 @RestController
 @RequestMapping("/api/board")
