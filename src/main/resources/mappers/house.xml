@@ -20,5 +20,14 @@
 		ORDER BY no DESC
 	</select>
 
-
+<!-- 	houseinfo 검색 by 가격, 아파트명, 동네명 -->
+		<select id="searchHouseDeal"
+		resultType="housedealdto" parameterType="searchhousedealdto">	
+		SELECT no, dong, aptname,
+		dealamount,buildyear,dealyear,dealmonth,dealday,area,floor,jibun
+		FROM housedeal
+		WHERE dong LIKE '%${dong}%' AND aptname LIKE '%${aptname}%'
+		and CAST(dealamount AS signed integer)  between #{dealamount_start} and #{dealamount_end}
+		ORDER BY no DESC
+	</select>
 </mapper>

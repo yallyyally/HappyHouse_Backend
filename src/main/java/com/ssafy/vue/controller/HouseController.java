@@ -8,11 +8,14 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.ssafy.vue.dto.HouseDealDto;
 import com.ssafy.vue.dto.HouseInfoDto;
+import com.ssafy.vue.dto.SearchHouseDealDto;
 import com.ssafy.vue.service.HouseService;
 
 import org.slf4j.Logger;
@@ -49,5 +52,15 @@ public class HouseController {
 	}
 	
 //	매물 검색~
+	@PostMapping("/housedeal")
+	@ApiOperation(value="매물 목록 검색 - housedeal, by 가격 , 동네, 아파트명")
+//	서로 data만 주고받는 비동기 통신 -> form 입력해서 axios에서 post로 줄것임.
+//	가격정보인 dealamount가 houseinfo에 없고 housedeal 밖에 없음.
+//	최소가격 ~ 최대 가격 인자가 필요해서 새로운 vo 인 searchhousedealdto 만듦
+	public ResponseEntity<List<HouseDealDto>> searchHouseDeal(@RequestBody SearchHouseDealDto searchHouseDeal){
+		return new ResponseEntity<List<HouseDealDto>> (houseService.searchHouseDeal(searchHouseDeal), HttpStatus.OK);
+	}
+	
+	
 	
 }

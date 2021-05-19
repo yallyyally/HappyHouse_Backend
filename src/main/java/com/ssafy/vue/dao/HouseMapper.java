@@ -6,11 +6,11 @@ import org.apache.ibatis.annotations.Mapper;
 
 import com.ssafy.vue.dto.HouseDealDto;
 import com.ssafy.vue.dto.HouseInfoDto;
+import com.ssafy.vue.dto.SearchHouseDealDto;
 
 @Mapper
 public interface HouseMapper {
 	public List<HouseDealDto> getHouseDealList();
 	public List<HouseInfoDto> getHouseInfoList();
-	public List<HouseDealDto> searchHouseDeal();
-	public List<HouseInfoDto> searchHouseInfo();
+	public List<HouseDealDto> searchHouseDeal(SearchHouseDealDto searchHouseDealDto);
 }

@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 import com.ssafy.vue.dao.HouseMapper;
 import com.ssafy.vue.dto.HouseDealDto;
 import com.ssafy.vue.dto.HouseInfoDto;
+import com.ssafy.vue.dto.SearchHouseDealDto;
 
 @Service
 public class HouseServiceImpl implements HouseService {
@@ -27,15 +28,9 @@ public class HouseServiceImpl implements HouseService {
 	}
 
 	@Override
-	public List<HouseDealDto> searchHouseDeal() {
-		// TODO Auto-generated method stub
-		return null;
+	public List<HouseDealDto> searchHouseDeal(SearchHouseDealDto searchHouseDealDto) {
+		return hdao.getMapper(HouseMapper.class).searchHouseDeal(searchHouseDealDto);
 	}
 
-	@Override
-	public List<HouseInfoDto> searchHouseInfo() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 }
