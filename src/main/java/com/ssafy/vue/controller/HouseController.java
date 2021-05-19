@@ -14,7 +14,7 @@ public class HouseController {
 		System.out.println("무야호 ");
 	}
 	
-//	매물 요청ss
+//	매물 요청sssss
 //	매물 검색/sdfsfsss
 	//test
 	
