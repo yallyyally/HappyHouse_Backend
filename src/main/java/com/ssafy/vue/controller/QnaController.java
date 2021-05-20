@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.ssafy.vue.dto.AnswerDto;
 import com.ssafy.vue.dto.QuestionDto;
 import com.ssafy.vue.service.AnswerService;
 import com.ssafy.vue.service.QuestionService;
@@ -23,6 +25,7 @@ import io.swagger.annotations.ApiOperation;
 //큐앤에이 관련
 @RestController
 @RequestMapping("/api/qna")
+@CrossOrigin(origins = { "*" }, maxAge = 6000)
 public class QnaController {
 	
 	@Autowired
@@ -84,11 +87,34 @@ public class QnaController {
 		else {
 			questionService.deleteQuestion(num);
 			System.out.println(" 삭제 완");
+			/////////////////////////
+//			답변 디비도 다 삭제해야함 ! 
+			/////////////////////////
 			return new ResponseEntity<>("possible",HttpStatus.OK);
 		}
 	}
 
 	
 ////////////////////answerService//////////////////////////
+//	답변 쓰기 -> num번째 질문에 대한 답변.
+//	현재 질문 글 번호를 프론트에서 저장하고 있엉 ㅑ할듯
+//	이때 body 안에 질문 번호도 넣어서 들어와야 함.
+	@PostMapping("/answer")
+	@ApiOperation(value="특정 질문에 대한 답글 작성")
+	public ResponseEntity insertAnswer(@RequestBody AnswerDto answerDto) {
+		answerService.insertAnswer(answerDto);
+		System.out.println("답변 완");
+		return new ResponseEntity<>(HttpStatus.OK);
+	}
 
+	
+//	답변 목록 가져오기
+	
+//	답변 수정
+//	현재 질문 글 번호를 프론트에서 저장하고 있엉 ㅑ할듯
+
+//	답변 삭제
+	
+
+	
 }
