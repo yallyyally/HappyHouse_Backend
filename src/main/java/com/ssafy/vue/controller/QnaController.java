@@ -80,19 +80,15 @@ public class QnaController {
 	
 //	질문 삭제 -> 답변이 하나 이상 있으면 삭제 못하게 조취
 	@DeleteMapping("/question/{num}/delete")
-	@ApiOperation(value="삭제 버튼 누르면 작동되는 메소드, 답변이 하나 이상 달리면 삭제 못하도록 막아야 함.")
+	@ApiOperation(value="삭제 버튼 누르면 작동되는 메소드, 답변들도 줄줄이 삭제")
 //	answerService 메소드 빌려 써도 될듯.
 	public ResponseEntity questionDeletePossible(@PathVariable int num) {
-		if(questionService.countAnswer(num) != 0)
-			return new ResponseEntity<>("impossible",HttpStatus.OK);
-		else {
+//			외래키 의존성 때문에 관련ㄷ ㅏㅂ변들 먼저 삭제해야함.
+			answerService.deleteAllAnswer(num);
 			questionService.deleteQuestion(num);
 			System.out.println(" 삭제 완");
-			/////////////////////////
-//			답변 디비도 다 삭제해야함 ! 
-			/////////////////////////
-			return new ResponseEntity<>("possible",HttpStatus.OK);
-		}
+//			관련 답변 디비도 다 삭제해야함 ! 
+			return new ResponseEntity<>(HttpStatus.OK);
 	}
 
 	

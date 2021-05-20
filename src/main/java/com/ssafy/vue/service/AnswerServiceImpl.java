@@ -34,6 +34,12 @@ public class AnswerServiceImpl implements AnswerService {
 	public void deleteAnswer(int num) {
 		aDao.getMapper(AnswerMapper.class).deleteAnswer(num);
 	}
+
+	@Override
+//	qnaNum번째 질문이 삭제되면 qnaNum값이 num인 answer들도 db에서 모조리 삭제
+	public void deleteAllAnswer(int num) {
+		aDao.getMapper(AnswerMapper.class).deleteAllAnswer(num);
+	}
 	
 	
 
