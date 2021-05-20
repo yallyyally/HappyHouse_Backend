@@ -32,4 +32,10 @@
 		where ansNum=#{num}
 	</delete>
 	
+<!-- 	특정 질문에소속된 답변 전부 삭제 -->
+	<delete id="deleteAllAnswer" parameterType="int">
+		delete from answer
+		where qnaNum=#{qnaNum}
+	</delete>
+	
 </mapper>

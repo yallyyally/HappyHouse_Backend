@@ -13,5 +13,5 @@ public interface AnswerMapper {
 	public List<AnswerDto> getAnswerList(int num);
 	public void updateAnswer(AnswerDto answerDto);
 	public void deleteAnswer(int num);
-
+	public void deleteAllAnswer(int qnaNum);
 }
