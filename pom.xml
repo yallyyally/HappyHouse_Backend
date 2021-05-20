@@ -72,6 +72,10 @@
 		
 		<!-- 로그인 토큰 관련... 왜하는지 모름 ㅜ 구글링 참고...ㅜㅜ -->
 		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+		<dependency>
             <groupId>io.jsonwebtoken</groupId>
             <artifactId>jjwt</artifactId>
             <version>0.9.1</version>
