@@ -18,25 +18,12 @@
 		where qnaNum = #{num}
 	</select>
 	
-<!-- 	특정 질문 조회 -->
-	<select id="readQuestion" resultType="QuestionDto" parameterType="int">
-		select qnaNum, queTitle, queContent, queTime,userid
-		from question
-		where qnaNum = #{qnaNum}
-	</select>
-	
-<!-- 	질문에 대한 답변 수 세보기 -->
-	<select id="countAnswer" resultType="int" parameterType="int">
-	select count(*)
-	from answer
-	where qnaNum=#{qnaNum}
-	</select>
-	
-<!-- 	질문 수정 -->
-	<update id="updateQuestion">
-        update question
-        set queContent=#{questionDto.queContent}, queTitle=#{questionDto.queTitle}
-		where qnaNum=#{qnaNum}
+<!-- 	답변 수정 -->
+	<update id="updateAnswer" parameterType="AnswerDto">
+<!-- 	꼭 속성명 쓰기. answerDto.ansContent는 @Param("answerDto") 했을 때만 가넝 지금은 알아서 속성값 으루 메핑한다  -->
+        update answer
+        set ansContent=#{ansContent}
+		where ansNum=#{ansNum}
 	</update>
 	
 <!-- 	질문 삭제 -->

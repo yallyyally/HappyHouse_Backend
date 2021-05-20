@@ -24,6 +24,11 @@ public class AnswerServiceImpl implements AnswerService {
 	public List<AnswerDto> getAnswerList(int num) {
 		return aDao.getMapper(AnswerMapper.class).getAnswerList(num);
 	}
+
+	@Override
+	public void updateAnswer(AnswerDto answerDto) {
+		aDao.getMapper(AnswerMapper.class).updateAnswer(answerDto);
+	}
 	
 	
 

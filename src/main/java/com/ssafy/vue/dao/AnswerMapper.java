@@ -11,6 +11,6 @@ import com.ssafy.vue.dto.AnswerDto;
 public interface AnswerMapper {
 	public void insertAnswer(@Param("answerDto") AnswerDto answerDto);
 	public List<AnswerDto> getAnswerList(int num);
-
+	public void updateAnswer(AnswerDto answerDto);
 
 }

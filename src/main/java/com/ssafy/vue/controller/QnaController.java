@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.ssafy.vue.dto.AnswerDto;
@@ -98,7 +99,7 @@ public class QnaController {
 ////////////////////answerService//////////////////////////
 //	답변 쓰기 -> num번째 질문에 대한 답변.
 //	현재 질문 글 번호를 프론트에서 저장하고 있엉 ㅑ할듯
-//	이때 body 안에 질문 번호도 넣어서 들어와야 함.
+//	이때 body 안에 답변 도 넣어서 들어와야 함. -> 따로 path 인자로 num을 줄지 말지는 프론트 만들어 봐야 알덧,,,, 
 	@PostMapping("/answer")
 	@ApiOperation(value="특정 질문에 대한 답글 작성")
 	public ResponseEntity insertAnswer(@RequestBody AnswerDto answerDto) {
@@ -114,7 +115,12 @@ public class QnaController {
 		return new ResponseEntity<List<AnswerDto>>(answerService.getAnswerList(num),HttpStatus.OK);
 	}
 //	답변 수정
-//	현재 질문 글 번호를 프론트에서 저장하고 있엉 ㅑ할듯
+//	현재 답변 dto 전체를 프론트에서 받아와야 할 듯.
+	@PutMapping("/answer")
+	public ResponseEntity updateAnswer(@RequestBody AnswerDto answerDto) {
+		answerService.updateAnswer(answerDto);
+		return new ResponseEntity<>(HttpStatus.OK);
+	}
 
 //	답변 삭제
 	
