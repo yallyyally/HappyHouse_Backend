@@ -63,13 +63,11 @@ public class BoardServiceImpl implements BoardService {
 	}
 
 	@Override
-	@Transactional
 	public boolean updateComment(CommentDto comment) {
 		return cDao.updateComment(comment) == 1;
 	}
 
 	@Override
-	@Transactional
 	public boolean deleteComment(int no) {
 		return cDao.deleteComment(no) == 1;
 	}
