@@ -23,4 +23,18 @@
 		from notice
 		where num = #{num}
 	</select>
+	
+<!-- 	공지사항 수정 -->
+	<update id="updateNotice">
+        update notice
+        set content=#{noticeDto.content}
+		where num=#{num}
+	</update>
+	
+<!-- 	공지사항 삭제 -->
+	<delete id="deleteNotice" parameterType="int">
+		delete from notice
+		where num=#{num}
+	</delete>
+	
 </mapper>

@@ -1,6 +1,8 @@
 package com.ssafy.vue.service;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,15 +33,14 @@ public class NoticeServiceImpl implements NoticeService {
 	}
 
 	@Override
-	public void deleteNotice() {
-		// TODO Auto-generated method stub
-
+	public void deleteNotice(int num) {
+		nDao.getMapper(NoticeMapper.class).deleteNotice(num);
 	}
 
 	@Override
-	public void updateNotice() {
-		// TODO Auto-generated method stub
-
+	public void updateNotice(int num, NoticeDto noticeDto) {
+		 nDao.getMapper(NoticeMapper.class).updateNotice(num,noticeDto);
 	}
+
 
 }
