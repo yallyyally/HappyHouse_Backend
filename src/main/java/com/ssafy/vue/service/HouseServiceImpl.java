@@ -1,6 +1,8 @@
 package com.ssafy.vue.service;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,8 +20,11 @@ public class HouseServiceImpl implements HouseService {
 	private SqlSession hdao;
 	
 	@Override
-	public List<HouseDealDto> getHouseDealList() {
-		return hdao.getMapper(HouseMapper.class).getHouseDealList();
+	public List<HouseDealDto> getHouseDealList(String dong, String aptname) {
+		Map map = new HashMap<String, String>();
+		map.put("dong", dong);
+		map.put("aptname", aptname);
+		return hdao.getMapper(HouseMapper.class).getHouseDealList(map);
 	}
 
 	@Override

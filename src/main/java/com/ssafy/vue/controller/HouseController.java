@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.ssafy.vue.dto.HouseDealDto;
@@ -36,22 +37,27 @@ public class HouseController {
 	@Autowired
 	private HouseService houseService;
 	
-//	매물요청스~
+
+	//houseinfo 에서 dong, aptname 을 넘겨주면 거기에 해당하는 housedeal 가져옴.
+//	프론트에서 요청시
+//	const res = await axios.get('https://localhost:9999/housedeal', { params: { aptname: 어쩌꾸, dong:어쩌구} });
 	@GetMapping("/housedeal")
 	@ApiOperation(value="매물 목록 반환 - housedeal 모두.")
-	public ResponseEntity<List<HouseDealDto>> getHouseDealList() {
-		logger.debug("getHouseList 호출스~");
-		return new ResponseEntity<List<HouseDealDto>>(houseService.getHouseDealList(),HttpStatus.OK);
+	public ResponseEntity<List<HouseDealDto>> getHouseDealList(
+			@RequestParam(value="dong") String dong, @RequestParam(value="aptname") String aptname) {
+		logger.debug("getHouseDealList 호출스~");
+		return new ResponseEntity<List<HouseDealDto>>(houseService.getHouseDealList(dong, aptname),HttpStatus.OK);
 	}
-	
+
+	//디폴트 : house info 전체 보여주기
 	@GetMapping("/houseinfo")
 	@ApiOperation(value="매물 목록 반환 -  houseinfo 정보 모두.")
 	public ResponseEntity<List<HouseInfoDto>> getHouseInfoList() {
-		logger.debug("getHouseList 호출스~");
+		logger.debug("getHouseInfoList 호출스~");
 		return new ResponseEntity<List<HouseInfoDto>>(houseService.getHouseInfoList(),HttpStatus.OK);
 	}
 	
-//	매물 검색~
+//	매물 검색~ -> 특정 가격대의 houseinfo 찾기 위해 join 필요.
 	@PostMapping("/housedeal")
 	@ApiOperation(value="매물 목록 검색 - housedeal, by 가격 , 동네, 아파트명")
 //	서로 data만 주고받는 비동기 통신 -> form 입력해서 axios에서 post로 줄것임.

@@ -5,10 +5,11 @@
 <mapper namespace="com.ssafy.vue.dao.HouseMapper">
 
 	<!-- housedeal 전체 조회 -->
-	<select id="getHouseDealList" resultType="housedealdto">
+	<select id="getHouseDealList" parameterType="hashMap" resultType="housedealdto">
 		SELECT no, dong, aptname,
 		dealamount,buildyear,dealyear,dealmonth,dealday,area,floor,jibun
 		FROM housedeal
+		WHERE dong=#{dong} AND aptname=#{aptname}
 		ORDER BY no DESC
 	</select>
 	
