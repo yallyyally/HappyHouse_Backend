@@ -15,9 +15,9 @@
 	<!-- 댓글 등록 -->
 	<insert id="insertComment" parameterType="CommentDto">
 		insert into comment(
-			cno, bno, userid, ccontent, cregtime
+			bno, userid, ccontent
 		) values (
-			#{cno}, #{bno}, #{userid}, #{ccontent}, now()
+			#{bno}, #{userid}, #{ccontent}
 		)
 	</insert>
 	
