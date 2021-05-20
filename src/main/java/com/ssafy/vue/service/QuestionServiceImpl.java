@@ -17,23 +17,21 @@ public class QuestionServiceImpl implements QuestionService {
 	
 	@Override
 	public List<QuestionDto> getQuestionList() {
-		return null;
+		return qDao.getMapper(QuestionMapper.class).getQuestionList();
 	}
 
 	@Override
-	public QuestionDto readQuestion(int queNum) {
-		// TODO Auto-generated method stub
-		return null;
+	public QuestionDto readQuestion(int qnaNum) {
+		return qDao.getMapper(QuestionMapper.class).readQuestion(qnaNum);
 	}
 
 	@Override
-	public void updateQuestion(int queNum, QuestionDto noticeDto) {
-		// TODO Auto-generated method stub
-
+	public void updateQuestion(int qnaNum,QuestionDto questionDto) {
+	 qDao.getMapper(QuestionMapper.class).updateQuestion(qnaNum, questionDto);
 	}
 
 	@Override
-	public void deleteQuestion(int queNum) {
+	public void deleteQuestion(int qnaNum) {
 		// TODO Auto-generated method stub
 
 	}
@@ -41,6 +39,11 @@ public class QuestionServiceImpl implements QuestionService {
 	@Override
 	public void insertQuestion(QuestionDto questionDto) {
 		qDao.getMapper(QuestionMapper.class).insertQuestion(questionDto);
+	}
+
+	@Override
+	public int countAnswer(int qnaNum) {
+		return qDao.getMapper(QuestionMapper.class).countAnswer(qnaNum);
 	}
 
 }

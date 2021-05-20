@@ -27,7 +27,7 @@
 <!-- 	공지사항 수정 -->
 	<update id="updateNotice">
         update notice
-        set content=#{noticeDto.content}
+        set content=#{noticeDto.content}, title=#{noticeDto.title}
 		where num=#{num}
 	</update>
 	

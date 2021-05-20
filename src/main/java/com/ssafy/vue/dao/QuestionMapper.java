@@ -12,7 +12,8 @@ public interface QuestionMapper {
 	
 	public void insertQuestion(QuestionDto questionDto);
 	public List<QuestionDto> getQuestionList();
-	public QuestionDto readQuestion(int queNum);
-	public void updateQuestion(@Param("queNum") int queNum, @Param("QuestionDto") QuestionDto questionDto);
-	public void deleteQuestion(int queNum);	
+	public QuestionDto readQuestion(int qnaNum);
+	public void updateQuestion(@Param("qnaNum") int qnaNum, @Param("questionDto") QuestionDto questionDto);
+	public void deleteQuestion(int qnaNum);
+	public int countAnswer(int qnaNum);	
 }
