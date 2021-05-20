@@ -32,8 +32,7 @@ public class QuestionServiceImpl implements QuestionService {
 
 	@Override
 	public void deleteQuestion(int qnaNum) {
-		// TODO Auto-generated method stub
-
+		qDao.getMapper(QuestionMapper.class).deleteQuestion(qnaNum);
 	}
 
 	@Override

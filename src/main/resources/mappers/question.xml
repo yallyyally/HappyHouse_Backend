@@ -38,10 +38,10 @@
 		where qnaNum=#{qnaNum}
 	</update>
 	
-<!-- 	공지사항 삭제 -->
-	<delete id="deleteNotice" parameterType="int">
-		delete from notice
-		where num=#{num}
+<!-- 	질문 삭제 -->
+	<delete id="deleteQuestion" parameterType="int">
+		delete from question
+		where qnaNum=#{qnaNum}
 	</delete>
 	
 </mapper>

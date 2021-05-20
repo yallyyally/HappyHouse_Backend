@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -74,9 +75,20 @@ public class QnaController {
 	}
 	
 //	질문 삭제 -> 답변이 하나 이상 있으면 삭제 못하게 조취
-//	@GetMapping("/question/{num}")
-//	질문 삭제
-//	@DeleteMapping("/question/{num}")
+	@DeleteMapping("/question/{num}/delete")
+	@ApiOperation(value="삭제 버튼 누르면 작동되는 메소드, 답변이 하나 이상 달리면 삭제 못하도록 막아야 함.")
+//	answerService 메소드 빌려 써도 될듯.
+	public ResponseEntity questionDeletePossible(@PathVariable int num) {
+		if(questionService.countAnswer(num) != 0)
+			return new ResponseEntity<>("impossible",HttpStatus.OK);
+		else {
+			questionService.deleteQuestion(num);
+			System.out.println(" 삭제 완");
+			return new ResponseEntity<>("possible",HttpStatus.OK);
+		}
+	}
+
+	
 ////////////////////answerService//////////////////////////
 
 }
