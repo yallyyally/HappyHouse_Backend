@@ -11,10 +11,11 @@
 		values(#{answerDto.qnaNum},#{answerDto.ansContent},#{answerDto.userid})
 	</insert>
 
-<!-- 	전체 질문 조회 -->
-	<select id="getQuestionList" resultType="QuestionDto">
-		select qnaNum, queTitle, queContent, queTime,userid
-		from question
+<!-- 	전체 답변 조회 -->
+	<select id="getAnswerList" resultType="AnswerDto" parameterType="int">
+		select qnaNum, ansNum, ansContent, ansTime,userid
+		from answer
+		where qnaNum = #{num}
 	</select>
 	
 <!-- 	특정 질문 조회 -->
