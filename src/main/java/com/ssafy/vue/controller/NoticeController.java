@@ -44,7 +44,7 @@ public class NoticeController {
 		return new ResponseEntity<List<NoticeDto>>(noticeService.getNoticeList(),HttpStatus.OK);
 		
 	}
-//	특정 번호 공지사항 조회.
+//	특정 번호 공지사항 조회...
 	@GetMapping("{num}")
 	public ResponseEntity<NoticeDto> readNotice(@PathVariable int num){
 		return new ResponseEntity<NoticeDto>(noticeService.readNotice(num),HttpStatus.OK);
