@@ -1,12 +1,14 @@
 package com.ssafy.vue.dto;
 
+import java.util.Date;
+
 public class MemberDto {
 	private String userid;
 	private String username;
 	private String userpwd;
 	private String phone;
 	private String email;
-	private String joindate;
+	private Date joindate;
 
 	public String getUserid() {
 		return userid;
@@ -48,11 +50,11 @@ public class MemberDto {
 		this.email = email;
 	}
 
-	public String getJoindate() {
+	public Date getJoindate() {
 		return joindate;
 	}
 
-	public void setJoindate(String joindate) {
+	public void setJoindate(Date joindate) {
 		this.joindate = joindate;
 	}
 
