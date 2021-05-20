@@ -7,16 +7,6 @@ public class MemberDto {
 	private String phone;
 	private String email;
 	private String joindate;
-	
-	public MemberDto(String userid, String username, String userpwd, String phone, String email, String joindate) {
-		super();
-		this.userid = userid;
-		this.username = username;
-		this.userpwd = userpwd;
-		this.phone = phone;
-		this.email = email;
-		this.joindate = joindate;
-	}
 
 	public String getUserid() {
 		return userid;

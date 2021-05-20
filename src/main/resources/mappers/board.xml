@@ -2,45 +2,50 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.ssafy.vue.dao.BoardDAO">
+<mapper namespace="com.ssafy.vue.dao.BoardMapper">
 
 	<!-- 게시글 전체 조회 -->
-	<select id="selectBoard" resultType="board">
-		select no, title, writer, content, regtime
-		  from vue_board 
-		 order by no desc
+	<select id="selectBoard" resultType="boardDto">
+		select bno, userid, btitle, bcontent, bregtime
+		  from board 
+		 order by bno desc
+	</select>
+	
+	<!-- 회원(작성가능한 사람 가지고오기 -->
+	<select id="writerList" resultType="string">
+		select userid from member
 	</select>
 	
 	<!-- 게시글 상세 조회 -->
-	<select id="selectBoardByNo" resultType="board">
-		select no, title, writer, content, regtime
-		  from vue_board 
-		 where no = #{no}
+	<select id="selectBoardByNo" resultType="boardDto">
+		select bno, userid, btitle, bcontent, bregtime
+		  from board 
+		 where bno = #{bno}
 	</select>
 
 	<!-- 게시글 등록 -->
-	<insert id="insertBoard" parameterType="board">
-		insert into vue_board(
-			title, writer, content
+	<insert id="insertBoard" parameterType="boardDto">
+		insert into board(
+			btitle, userid, bcontent
 		) values (
-			#{title}, #{writer}, #{content}
+			#{btitle}, #{userid}, #{bcontent}
 		)
 	</insert>
 	
 	<!-- 게시글 수정 -->
-	<update id="updateBoard" parameterType="board">
-		update vue_board 
-		   set title = #{title}, 
-		   	   writer = #{writer}, 
-		   	   content = #{content}
-		 where no = #{no}
+	<update id="updateBoard" parameterType="boardDto">
+		update board 
+		   set btitle = #{btitle}, 
+		   	   userid = #{userid}, 
+		   	   bcontent = #{bcontent}
+		 where bno = #{bno}
 	</update>
 
 	<!-- 게시글 삭제 -->
 	<delete id="deleteBoard" parameterType="int">
 		delete 
-		  from vue_board 
-		 where no = #{no}
+		  from board 
+		 where bno = #{bno}
 	</delete>
 
 </mapper>
