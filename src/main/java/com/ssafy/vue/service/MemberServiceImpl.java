@@ -11,31 +11,31 @@ import com.ssafy.vue.dto.MemberDto;
 public class MemberServiceImpl implements MemberService {
 
 	@Autowired
-	private SqlSession mdao;
+	private SqlSession mDao;
 	
 	@Override
-	public MemberDto login(MemberDto memberDto) throws Exception {
-		return mdao.getMapper(MemberMapper.class).login(memberDto);
+	public MemberDto login(MemberDto member) throws Exception {
+		return mDao.getMapper(MemberMapper.class).login(member);
 	}
 
 	@Override
-	public boolean regist(MemberDto memberDto) throws Exception {
-		return mdao.getMapper(MemberMapper.class).regist(memberDto)==1;
+	public boolean regist(MemberDto member) throws Exception {
+		return mDao.getMapper(MemberMapper.class).regist(member)==1;
 	}
 
 	@Override
 	public MemberDto read(String userid) throws Exception {
-		return mdao.getMapper(MemberMapper.class).read(userid);
+		return mDao.getMapper(MemberMapper.class).read(userid);
 	}
 
 	@Override
-	public boolean update(MemberDto memberDto) throws Exception {
-		return mdao.getMapper(MemberMapper.class).update(memberDto)==1;
+	public boolean update(MemberDto member) throws Exception {
+		return mDao.getMapper(MemberMapper.class).update(member)==1;
 	}
 
 	@Override
 	public boolean delete(String userid) throws Exception {
-		return mdao.getMapper(MemberMapper.class).delete(userid)==1;
+		return mDao.getMapper(MemberMapper.class).delete(userid)==1;
 	}
 
 	@Override

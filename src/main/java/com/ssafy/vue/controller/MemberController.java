@@ -81,10 +81,10 @@ public class MemberController {
 
 	@ApiOperation(value = "회원가입.", response = BooleanResult.class)
 	@PostMapping("/regist")
-	public ResponseEntity<BooleanResult> registMember(@RequestBody MemberDto dto) throws Exception {
+	public ResponseEntity<BooleanResult> registMember(@RequestBody MemberDto member) throws Exception {
 		logger.info("회원등록" + new Date());
-		logger.info("회원등록" + dto);
-		boolean checkRegi = memberService.regist(dto);
+		logger.info("회원등록" + member);
+		boolean checkRegi = memberService.regist(member);
 		BooleanResult br = new BooleanResult();
 		br.setCheck(checkRegi);
 		br.setName("regist");
@@ -125,10 +125,10 @@ public class MemberController {
 
 	@ApiOperation(value = "회원정보 수정 ", response = BooleanResult.class)
 	@PutMapping("/update")
-	public ResponseEntity<BooleanResult> updateMember(@RequestBody MemberDto dto) throws Exception {
+	public ResponseEntity<BooleanResult> updateMember(@RequestBody MemberDto member) throws Exception {
 		logger.info("회원 정보 수정 " + new Date());
-		logger.info("회원 정보 수정" + dto);
-		boolean checkUpdate = memberService.update(dto);
+		logger.info("회원 정보 수정" + member);
+		boolean checkUpdate = memberService.update(member);
 		BooleanResult br = new BooleanResult();
 		br.setCheck(checkUpdate);
 		br.setName("update");

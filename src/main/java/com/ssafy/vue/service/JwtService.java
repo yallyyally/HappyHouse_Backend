@@ -20,7 +20,7 @@ public class JwtService {
 	private Long expireMin = 20L;
 
 	// 로그인 성공시 사용자 정보를 기반으로 JWTToken을 생성하여 반환하기 
-	public String create(MemberDto memberDto) {
+	public String create(MemberDto member) {
 		JwtBuilder jwtBuilder = Jwts.builder();
 		// JWT Token = Header + Payload + Signature
 		
@@ -31,7 +31,7 @@ public class JwtService {
 		jwtBuilder
 			.setSubject("로그인토큰") // 토큰의 제목 설정
 			.setExpiration(new Date(System.currentTimeMillis() + 1000 * 60 * expireMin)) // 유효기간 설정
-			.claim("user", memberDto).claim("greeting", "환영합니다. " + memberDto.getUserid()); // 담고 싶은 정보 설정.
+			.claim("user", member).claim("greeting", "환영합니다. " + member.getUserid()); // 담고 싶은 정보 설정.
 		
 		// signature 설정
 		jwtBuilder.signWith(SignatureAlgorithm.HS256, signature.getBytes());
