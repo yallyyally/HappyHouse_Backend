@@ -24,11 +24,18 @@
 		where qnaNum = #{qnaNum}
 	</select>
 	
-<!-- 	공지사항 수정 -->
-	<update id="updateNotice">
-        update notice
-        set content=#{noticeDto.content}
-		where num=#{num}
+<!-- 	질문에 대한 답변 수 세보기 -->
+	<select id="countAnswer" resultType="int" parameterType="int">
+	select count(*)
+	from answer
+	where qnaNum=#{qnaNum}
+	</select>
+	
+<!-- 	질문 수정 -->
+	<update id="updateQuestion">
+        update question
+        set queContent=#{questionDto.queContent}, queTitle=#{questionDto.queTitle}
+		where qnaNum=#{qnaNum}
 	</update>
 	
 <!-- 	공지사항 삭제 -->

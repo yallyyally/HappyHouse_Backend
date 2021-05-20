@@ -10,8 +10,9 @@ public interface QuestionService {
 	
 	public void insertQuestion(QuestionDto questionDto);
 	public List<QuestionDto> getQuestionList();
-	public QuestionDto readQuestion(int queNum);
-	public void updateQuestion(int queNum, QuestionDto noticeDto);
-	public void deleteQuestion(int queNum);
+	public QuestionDto readQuestion(int qnaNum);
+	public void updateQuestion(int qnaNum, QuestionDto questionDto);
+	public void deleteQuestion(int qnaNum);
+	public int countAnswer(int qnaNum);
 	
 }
