@@ -11,4 +11,9 @@
 		values(#{title},#{content})
 	</insert>
 
+<!-- 	전체 공지사항 조회 -->
+	<select id="getNoticeList" resultType="NoticeDto">
+		select num, title, content, regtime
+		from notice
+	</select>
 </mapper>

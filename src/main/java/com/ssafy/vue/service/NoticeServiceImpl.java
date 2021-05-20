@@ -22,8 +22,7 @@ public class NoticeServiceImpl implements NoticeService {
 
 	@Override
 	public List<NoticeDto> getNoticeList() {
-		// TODO Auto-generated method stub
-		return null;
+		return nDao.getMapper(NoticeMapper.class).getNoticeList();
 	}
 
 	@Override

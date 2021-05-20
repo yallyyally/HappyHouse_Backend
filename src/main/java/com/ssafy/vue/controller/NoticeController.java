@@ -1,8 +1,11 @@
 package com.ssafy.vue.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -30,5 +33,18 @@ public class NoticeController {
 		noticeService.insertNotice(noticeDto);
 		return new ResponseEntity<>(HttpStatus.OK);
 	}
+	
+//	전체 공지사항 조회.
+	@GetMapping("/notice")
+	@ApiOperation(value="전체 공지사항 조회")
+	public ResponseEntity<List<NoticeDto>> getNoticeList(){
+		return new ResponseEntity<List<NoticeDto>>(noticeService.getNoticeList(),HttpStatus.OK);
+		
+	}
+//	특정 공지사항 조회.
+	
+//	공지사항 수정.
+	
+//	공지사항 삭제.
 	
 }
