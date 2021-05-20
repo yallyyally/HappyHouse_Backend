@@ -44,7 +44,7 @@ public class BoardController {
 		return new ResponseEntity<List<BoardDto>>(boardService.retrieveBoard(), HttpStatus.OK);
 	}
     
-    @ApiOperation(value = "모든 게시글의 정보를 반환한다.", response = List.class)
+    @ApiOperation(value = "자유게시판에 글을 작성할 수 있는 모든 사용자의 정보를 반환한다.", response = List.class)
 	@GetMapping(value = "/writerList")
 	public ResponseEntity<List<String>> retrieveWriter() throws Exception {
 		logger.debug("retrieveWriter - 호출");
