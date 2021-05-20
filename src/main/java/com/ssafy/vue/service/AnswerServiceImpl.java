@@ -29,6 +29,11 @@ public class AnswerServiceImpl implements AnswerService {
 	public void updateAnswer(AnswerDto answerDto) {
 		aDao.getMapper(AnswerMapper.class).updateAnswer(answerDto);
 	}
+
+	@Override
+	public void deleteAnswer(int num) {
+		aDao.getMapper(AnswerMapper.class).deleteAnswer(num);
+	}
 	
 	
 

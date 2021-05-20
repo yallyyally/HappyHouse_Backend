@@ -122,7 +122,12 @@ public class QnaController {
 		return new ResponseEntity<>(HttpStatus.OK);
 	}
 
-//	답변 삭제
+//	답변 삭제 - num번째 답변 삭제 ㄱ
+	@DeleteMapping("/answer/{num}")
+	public ResponseEntity deleteAnswer(@PathVariable int num) {
+		answerService.deleteAnswer(num);
+		return new ResponseEntity(HttpStatus.OK);
+	}
 	
 
 	

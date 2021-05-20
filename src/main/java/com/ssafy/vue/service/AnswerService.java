@@ -9,4 +9,5 @@ public interface AnswerService {
 	public void insertAnswer( AnswerDto answerDto);
 	public List<AnswerDto> getAnswerList(int num);
 	public void updateAnswer(AnswerDto answerDto);
+	public void deleteAnswer(int num);
 }

@@ -26,10 +26,10 @@
 		where ansNum=#{ansNum}
 	</update>
 	
-<!-- 	질문 삭제 -->
-	<delete id="deleteQuestion" parameterType="int">
-		delete from question
-		where qnaNum=#{qnaNum}
+<!-- 	답변 삭제 -->
+	<delete id="deleteAnswer" parameterType="int">
+		delete from answer
+		where ansNum=#{num}
 	</delete>
 	
 </mapper>

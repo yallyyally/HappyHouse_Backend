@@ -12,5 +12,6 @@ public interface AnswerMapper {
 	public void insertAnswer(@Param("answerDto") AnswerDto answerDto);
 	public List<AnswerDto> getAnswerList(int num);
 	public void updateAnswer(AnswerDto answerDto);
+	public void deleteAnswer(int num);
 
 }
