@@ -69,6 +69,13 @@
 		   <groupId>com.fasterxml.jackson.core</groupId>
 		   <artifactId>jackson-databind</artifactId>
 		</dependency>
+		
+		<!-- 로그인 토큰 관련... 왜하는지 모름 ㅜ 구글링 참고...ㅜㅜ -->
+		<dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+            <version>0.9.1</version>
+        </dependency>
 	</dependencies>
 
 	<build>
