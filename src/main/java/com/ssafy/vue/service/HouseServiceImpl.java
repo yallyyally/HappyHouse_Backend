@@ -33,8 +33,8 @@ public class HouseServiceImpl implements HouseService {
 	}
 
 	@Override
-	public List<HouseDealDto> searchHouseDeal(SearchHouseDealDto searchHouseDealDto) {
-		return hdao.getMapper(HouseMapper.class).searchHouseDeal(searchHouseDealDto);
+	public List<HouseInfoDto> searchHouseInfo(SearchHouseDealDto searchHouseDealDto) {
+		return hdao.getMapper(HouseMapper.class).searchHouseInfo(searchHouseDealDto);
 	}
 
 

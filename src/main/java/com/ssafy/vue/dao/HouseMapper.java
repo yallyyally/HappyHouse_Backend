@@ -13,5 +13,5 @@ import com.ssafy.vue.dto.SearchHouseDealDto;
 public interface HouseMapper {
 	public List<HouseDealDto> getHouseDealList(Map map);
 	public List<HouseInfoDto> getHouseInfoList();
-	public List<HouseDealDto> searchHouseDeal(SearchHouseDealDto searchHouseDealDto);
+	public List<HouseInfoDto> searchHouseInfo(SearchHouseDealDto searchHouseDealDto);
 }
