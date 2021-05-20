@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+        
+<mapper namespace="com.ssafy.vue.dao.AnswerMapper">
+
+	<!-- 답변 작성.  -->
+	<insert id="insertAnswer" >
+	    insert into answer (qnaNum,ansContent,userid)
+		values(#{answerDto.qnaNum},#{answerDto.ansContent},#{answerDto.userid})
+	</insert>
+
+<!-- 	전체 질문 조회 -->
+	<select id="getQuestionList" resultType="QuestionDto">
+		select qnaNum, queTitle, queContent, queTime,userid
+		from question
+	</select>
+	
+<!-- 	특정 질문 조회 -->
+	<select id="readQuestion" resultType="QuestionDto" parameterType="int">
+		select qnaNum, queTitle, queContent, queTime,userid
+		from question
+		where qnaNum = #{qnaNum}
+	</select>
+	
+<!-- 	질문에 대한 답변 수 세보기 -->
+	<select id="countAnswer" resultType="int" parameterType="int">
+	select count(*)
+	from answer
+	where qnaNum=#{qnaNum}
+	</select>
+	
+<!-- 	질문 수정 -->
+	<update id="updateQuestion">
+        update question
+        set queContent=#{questionDto.queContent}, queTitle=#{questionDto.queTitle}
+		where qnaNum=#{qnaNum}
+	</update>
+	
+<!-- 	질문 삭제 -->
+	<delete id="deleteQuestion" parameterType="int">
+		delete from question
+		where qnaNum=#{qnaNum}
+	</delete>
+	
+</mapper>
