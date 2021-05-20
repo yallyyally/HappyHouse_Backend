@@ -16,4 +16,11 @@
 		select num, title, content, regtime
 		from notice
 	</select>
+	
+<!-- 	특정 공지사항 조회 -->
+	<select id="readNotice" resultType="NoticeDto" parameterType="int">
+		select num, title, content, regtime
+		from notice
+		where num = #{num}
+	</select>
 </mapper>

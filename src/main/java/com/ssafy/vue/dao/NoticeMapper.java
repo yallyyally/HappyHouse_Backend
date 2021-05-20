@@ -11,7 +11,7 @@ public interface NoticeMapper {
 	
 	public void insertNotice(NoticeDto noticeDto);
 	public List<NoticeDto> getNoticeList();
-	public NoticeDto readNotice();
+	public NoticeDto readNotice(int num);
 	public void deleteNotice();
 	public void updateNotice();
 	
