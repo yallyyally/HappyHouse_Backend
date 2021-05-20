@@ -9,7 +9,25 @@ public class HouseInfoDto {
 	private String jibun;
 	private String lat;
 	private String lng;
+	private String high;
+	private String low;
 	
+	public String getHigh() {
+		return high;
+	}
+
+	public void setHigh(String high) {
+		this.high = high;
+	}
+
+	public String getLow() {
+		return low;
+	}
+
+	public void setLow(String low) {
+		this.low = low;
+	}
+
 	public int getNo() {
 		return no;
 	}

@@ -42,7 +42,7 @@ public class HouseController {
 //	프론트에서 요청시
 //	const res = await axios.get('https://localhost:9999/housedeal', { params: { aptname: 어쩌꾸, dong:어쩌구} });
 	@GetMapping("/housedeal")
-	@ApiOperation(value="매물 목록 반환 - housedeal 모두.")
+	@ApiOperation(value="매물 목록 반환 - houseinfo에서 넘겨준 dong, aptname 기준으로 (map parameter)")
 	public ResponseEntity<List<HouseDealDto>> getHouseDealList(
 			@RequestParam(value="dong") String dong, @RequestParam(value="aptname") String aptname) {
 		logger.debug("getHouseDealList 호출스~");
@@ -58,13 +58,13 @@ public class HouseController {
 	}
 	
 //	매물 검색~ -> 특정 가격대의 houseinfo 찾기 위해 join 필요.
-	@PostMapping("/housedeal")
-	@ApiOperation(value="매물 목록 검색 - housedeal, by 가격 , 동네, 아파트명")
+	@PostMapping("/houseinfo")
+	@ApiOperation(value="매물 목록 검색 - houseinfo, by 가격 (from join housedeal), 동네, 아파트명")
 //	서로 data만 주고받는 비동기 통신 -> form 입력해서 axios에서 post로 줄것임.
 //	가격정보인 dealamount가 houseinfo에 없고 housedeal 밖에 없음.
 //	최소가격 ~ 최대 가격 인자가 필요해서 새로운 vo 인 searchhousedealdto 만듦
-	public ResponseEntity<List<HouseDealDto>> searchHouseDeal(@RequestBody SearchHouseDealDto searchHouseDeal){
-		return new ResponseEntity<List<HouseDealDto>> (houseService.searchHouseDeal(searchHouseDeal), HttpStatus.OK);
+	public ResponseEntity<List<HouseInfoDto>> searchHouseInfo(@RequestBody SearchHouseDealDto searchHouseDeal){
+		return new ResponseEntity<List<HouseInfoDto>> (houseService.searchHouseInfo(searchHouseDeal), HttpStatus.OK);
 	}
 	
 	
