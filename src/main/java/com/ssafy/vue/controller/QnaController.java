@@ -1,8 +1,11 @@
 package com.ssafy.vue.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -32,6 +35,13 @@ public class QnaController {
 		System.out.println("질문 작성 요청 ~");
 		questionService.insertQuestion(questionDto);
 		return new ResponseEntity<>(HttpStatus.OK);
+	}
+	
+//	전체 질문 불러오기
+	@GetMapping("/question")
+	@ApiOperation(value="전체 질문 조회")
+	public ResponseEntity<List<QuestionDto>> getQuestionList(){
+		return new ResponseEntity<List<QuestionDto>>(questionService.getQuestionList(),HttpStatus.OK);
 	}
 	
 ////////////////////answerService//////////////////////////

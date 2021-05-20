@@ -11,10 +11,10 @@
 		values(#{queTitle},#{queContent},#{userid})
 	</insert>
 
-<!-- 	전체 공지사항 조회 -->
-	<select id="getNoticeList" resultType="NoticeDto">
-		select num, title, content, regtime
-		from notice
+<!-- 	전체 질문 조회 -->
+	<select id="getQuestionList" resultType="QuestionDto">
+		select qnaNum, queTitle, queContent, queTime,userid
+		from question
 	</select>
 	
 <!-- 	특정 공지사항 조회 -->

@@ -17,7 +17,7 @@ public class QuestionServiceImpl implements QuestionService {
 	
 	@Override
 	public List<QuestionDto> getQuestionList() {
-		return null;
+		return qDao.getMapper(QuestionMapper.class).getQuestionList();
 	}
 
 	@Override
