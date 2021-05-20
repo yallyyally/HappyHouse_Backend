@@ -17,11 +17,11 @@
 		from question
 	</select>
 	
-<!-- 	특정 공지사항 조회 -->
-	<select id="readNotice" resultType="NoticeDto" parameterType="int">
-		select num, title, content, regtime
-		from notice
-		where num = #{num}
+<!-- 	특정 질문 조회 -->
+	<select id="readQuestion" resultType="QuestionDto" parameterType="int">
+		select qnaNum, queTitle, queContent, queTime,userid
+		from question
+		where qnaNum = #{qnaNum}
 	</select>
 	
 <!-- 	공지사항 수정 -->

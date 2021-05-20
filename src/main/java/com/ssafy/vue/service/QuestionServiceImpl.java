@@ -22,8 +22,7 @@ public class QuestionServiceImpl implements QuestionService {
 
 	@Override
 	public QuestionDto readQuestion(int queNum) {
-		// TODO Auto-generated method stub
-		return null;
+		return qDao.getMapper(QuestionMapper.class).readQuestion(queNum);
 	}
 
 	@Override

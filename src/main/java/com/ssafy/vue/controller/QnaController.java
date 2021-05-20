@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -44,6 +45,12 @@ public class QnaController {
 		return new ResponseEntity<List<QuestionDto>>(questionService.getQuestionList(),HttpStatus.OK);
 	}
 	
+//	특정 질문 불러오기
+	@GetMapping("/question/{num}")
+	@ApiOperation(value="특정 질문 조회")
+	public ResponseEntity<QuestionDto> readQuestion(@PathVariable int num){
+		return new ResponseEntity<QuestionDto> (questionService.readQuestion(num),HttpStatus.OK);
+	}
 ////////////////////answerService//////////////////////////
 
 }
