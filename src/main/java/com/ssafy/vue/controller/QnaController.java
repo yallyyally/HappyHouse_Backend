@@ -108,8 +108,11 @@ public class QnaController {
 	}
 
 	
-//	답변 목록 가져오기
-	
+//	답변 목록 가져오기 - num 번째 질문.
+	@GetMapping("/answer/{num}")
+	public ResponseEntity<List<AnswerDto>> getAnswerList(@PathVariable int num){
+		return new ResponseEntity<List<AnswerDto>>(answerService.getAnswerList(num),HttpStatus.OK);
+	}
 //	답변 수정
 //	현재 질문 글 번호를 프론트에서 저장하고 있엉 ㅑ할듯
 
