@@ -91,33 +91,41 @@ public class BoardController {
 		return new ResponseEntity<String>(FAIL, HttpStatus.NO_CONTENT);
 	}
     
-    @ApiOperation(value = "새로운 댓글을 입력한다. 그리고 DB입력 성공여부에 따라 'success' 또는 'fail' 문자열을 반환한다.", response = String.class)
-	@PostMapping(value="/detail/{no}")
+    @ApiOperation(value = "bno에 해당하는 댓글 목록을 반환한다.", response = List.class)
+	@GetMapping("/comment/{bno}")
+	public ResponseEntity<List<CommentDto>> getCmtList(@PathVariable("bno") int bno) {
+		logger.debug("listComment - 호출");
+		return new ResponseEntity<>(boardService.getCmtList(bno), HttpStatus.OK);
+	}
+
+	@ApiOperation(value = "새로운 댓글을 작성한다. 그리고 DB입력 성공여부에 따라 'success' 또는 'fail' 문자열을 반환한다.", response = String.class)
+	@PostMapping("/comment")
 	public ResponseEntity<String> writeComment(@RequestBody CommentDto comment) {
 		logger.debug("writeComment - 호출");
-		if (boardService.writeComment(comment)) {
+		if(boardService.writeComment(comment)) {
 			return new ResponseEntity<String>(SUCCESS, HttpStatus.OK);
 		}
 		return new ResponseEntity<String>(FAIL, HttpStatus.NO_CONTENT);
 	}
 
-    @ApiOperation(value = "댓글번호에 해당하는 댓글의 정보를 수정한다. 그리고 DB수정 성공여부에 따라 'success' 또는 'fail' 문자열을 반환한다.", response = String.class)
-	@PutMapping("/update/{no}")
+	@ApiOperation(value = "글번호가 bno에 해당하는 댓글을 수정한다. 그리고 DB수정 성공여부에 따라 'success' 또는 'fail' 문자열을 반환한다.", response = String.class)
+	@PutMapping("/comment")
 	public ResponseEntity<String> updateComment(@RequestBody CommentDto comment) {
 		logger.debug("updateComment - 호출");
 		logger.debug("" + comment);
-		
-		if (boardService.updateComment(comment)) {
+		System.out.println("댓글 수정하자~~~~!"  + comment);
+		if(boardService.updateComment(comment)) {
+			System.out.println("댓글 수정 성공 무야호~~~");
 			return new ResponseEntity<String>(SUCCESS, HttpStatus.OK);
 		}
 		return new ResponseEntity<String>(FAIL, HttpStatus.NO_CONTENT);
 	}
 
-    @ApiOperation(value = "댓글번호에 해당하는 댓글의 정보를 삭제한다. 그리고 DB삭제 성공여부에 따라 'success' 또는 'fail' 문자열을 반환한다.", response = String.class)
-	@DeleteMapping("/delete/{no}")
-	public ResponseEntity<String> deleteComment(@PathVariable int no) {
+	@ApiOperation(value = "댓글번호가 cno에 해당하는 댓글을 삭제한다. 그리고 DB삭제 성공여부에 따라 'success' 또는 'fail' 문자열을 반환한다.", response = String.class)
+	@DeleteMapping("/comment/{cno}")
+	public ResponseEntity<String> deleteComment(@PathVariable("cno") int cno) {
 		logger.debug("deleteComment - 호출");
-		if (boardService.deleteComment(no)) {
+		if(boardService.deleteComment(cno)) {
 			return new ResponseEntity<String>(SUCCESS, HttpStatus.OK);
 		}
 		return new ResponseEntity<String>(FAIL, HttpStatus.NO_CONTENT);

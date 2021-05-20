@@ -17,5 +17,5 @@ public interface BoardService {
 	public List<CommentDto> getCmtList(int bno);
 	public boolean writeComment(CommentDto comment);
 	public boolean updateComment(CommentDto comment);
-	public boolean deleteComment(int no);
+	public boolean deleteComment(int cno);
 }
