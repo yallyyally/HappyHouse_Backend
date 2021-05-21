@@ -18,11 +18,11 @@
 	</insert>
 	
 	<!-- 회원 정보 조회 --> 
-	<select id="read" parameterType="String" resultType="MemberDto">
+	<!--  <select id="read" parameterType="String" resultType="MemberDto">
 		select userid, username, userpwd, phone, email, joindate
 		from member
 		where userid = ${userid}
-	</select>
+	</select> -->
 	
 	<!-- 회원 정보 수정 -->
 	<update id="update" parameterType="MemberDto" >

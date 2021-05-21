@@ -3,6 +3,7 @@ package com.ssafy.vue.controller;
 import java.sql.SQLException;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
@@ -44,7 +45,8 @@ public class MemberController {
 	@Autowired
 	private JwtService jwtService;
 
-	@ApiOperation(value = "로그인 확인", response = Map.class)
+//	@ApiOperation(value = "로그인 확인", response = Map.class)
+	@ApiOperation(value = "로그인 정보 조회 후 성공/실패 여부를 반환한다", response = List.class)
 	@PostMapping("/confirm/login")
 	public ResponseEntity<Map<String, Object>> login(@RequestBody MemberDto member, HttpServletResponse response,
 			HttpSession session) {
@@ -80,7 +82,8 @@ public class MemberController {
 		return new ResponseEntity<Map<String, Object>>(resultMap, status);
 	}
 
-	@ApiOperation(value = "회원가입.", response = BooleanResult.class)
+//	@ApiOperation(value = "회원가입.", response = BooleanResult.class)
+	@ApiOperation(value = "회원 정보 등록 후 성공/실패 여부를 반환한다", response = List.class)
 	@PostMapping("/regist")
 //	public ResponseEntity<BooleanResult> registMember(@RequestBody MemberDto member) throws Exception {
 //		logger.info("회원등록" + new Date());
@@ -108,8 +111,8 @@ public class MemberController {
 			return new ResponseEntity<String>("fail", HttpStatus.OK);
 	}
 
-	@ApiOperation(value = "회원정보 조회", response = MemberDto.class)
-	@GetMapping("/info")
+//	@ApiOperation(value = "회원정보 조회", response = MemberDto.class)
+//	@GetMapping("/info")
 //	public ResponseEntity<Map<String, Object>> getInfo(HttpServletRequest req) {
 //		Map<String, Object> resultMap = new HashMap<>();
 //		HttpStatus status = HttpStatus.ACCEPTED;
@@ -127,6 +130,9 @@ public class MemberController {
 //			resultMap.put("message", e.getMessage());
 //			status = HttpStatus.INTERNAL_SERVER_ERROR;
 //		}
+	
+	@ApiOperation(value = "회원 정보를 반환한다", response = List.class)
+	@GetMapping("/info")
 	public ResponseEntity<Map<String, Object>> getInfo(HttpServletRequest req) {
 		Map<String, Object> resultMap = new HashMap<>();
 		HttpStatus status = HttpStatus.ACCEPTED;
@@ -143,8 +149,8 @@ public class MemberController {
 		return new ResponseEntity<Map<String, Object>>(resultMap, status);
 	}
 
-	@ApiOperation(value = "회원정보 수정 ", response = BooleanResult.class)
-	@PutMapping("/update")
+//	@ApiOperation(value = "회원정보 수정 ", response = BooleanResult.class)
+//	@PutMapping("/update")
 //	public ResponseEntity<BooleanResult> updateMember(@RequestBody MemberDto member) throws Exception {
 //		logger.info("회원 정보 수정 " + new Date());
 //		logger.info("회원 정보 수정" + member);
@@ -163,6 +169,9 @@ public class MemberController {
 //
 //		return new ResponseEntity<BooleanResult>(br, HttpStatus.OK);
 //	}
+	
+	@ApiOperation(value = "회원 정보 수정 후 성공/실패 여부를 반환한다", response = List.class)
+	@PutMapping("/update")
 	public ResponseEntity<String> updateMember(@RequestBody MemberDto member) throws Exception {
 		int resultCnt = memberService.update(member);
 		if(resultCnt > 0)
@@ -171,8 +180,8 @@ public class MemberController {
 			return new ResponseEntity<String>("fail", HttpStatus.OK);
 	}
 
-	@ApiOperation(value = "회원탈퇴", response = BooleanResult.class)
-	@DeleteMapping("/delete")
+//	@ApiOperation(value = "회원탈퇴", response = BooleanResult.class)
+//	@DeleteMapping("/delete")
 //	public ResponseEntity<BooleanResult> deleteMember(@RequestBody String userid) throws Exception {
 //		logger.info("회원 정보 삭제 !!!!" + new Date());
 //		logger.info("회원 정보 삭제 !!!!" + userid);
@@ -184,6 +193,9 @@ public class MemberController {
 //		
 //		return new ResponseEntity<BooleanResult>(br, HttpStatus.OK);
 //	}
+	
+	@ApiOperation(value = "회원 정보 삭제 후 성공/실패 여부를 반환한다", response = List.class)
+	@DeleteMapping("/delete")
 	public ResponseEntity<String> deleteMember(MemberDto member) throws Exception {
 		int resultCnt = memberService.delete(member);
 		if(resultCnt > 0)

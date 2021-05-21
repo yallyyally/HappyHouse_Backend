@@ -23,10 +23,10 @@ public class MemberServiceImpl implements MemberService {
 		return mDao.getMapper(MemberMapper.class).regist(member);
 	}
 
-	@Override
-	public MemberDto read(String userid) throws Exception {
-		return mDao.getMapper(MemberMapper.class).read(userid);
-	}
+//	@Override
+//	public MemberDto read(String userid) throws Exception {
+//		return mDao.getMapper(MemberMapper.class).read(userid);
+//	}
 
 	@Override
 	public int update(MemberDto member) throws Exception {
