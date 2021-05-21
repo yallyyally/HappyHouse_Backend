@@ -2705,3 +2705,5 @@ java.lang.RuntimeException: null
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
+[2m2021-05-20 21:54:04.640[0;39m [32m INFO[0;39m [35m15004[0;39m [2m---[0;39m [2m[on(2)-127.0.0.1][0;39m [36minMXBeanRegistrar$SpringApplicationAdmin[0;39m [2m:[0;39m Application shutdown requested.
+[2m2021-05-20 21:54:08.832[0;39m [32m INFO[0;39m [35m15004[0;39m [2m---[0;39m [2m[on(2)-127.0.0.1][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Shutting down ExecutorService 'applicationTaskExecutor'

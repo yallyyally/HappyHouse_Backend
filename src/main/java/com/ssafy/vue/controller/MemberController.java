@@ -1,5 +1,6 @@
 package com.ssafy.vue.controller;
 
+import java.sql.SQLException;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -81,80 +82,113 @@ public class MemberController {
 
 	@ApiOperation(value = "회원가입.", response = BooleanResult.class)
 	@PostMapping("/regist")
-	public ResponseEntity<BooleanResult> registMember(@RequestBody MemberDto member) throws Exception {
-		logger.info("회원등록" + new Date());
-		logger.info("회원등록" + member);
-		boolean checkRegi = memberService.regist(member);
-		BooleanResult br = new BooleanResult();
-		br.setCheck(checkRegi);
-		br.setName("regist");
-		br.setState("success");
-		logger.info("회원등록 checkRegi " + checkRegi);
-		if (!checkRegi) {
-			br.setCheck(false);
-			br.setName("regist");
-			br.setState("fail");
-			return new ResponseEntity<BooleanResult>(br, HttpStatus.OK);
-		}
-
-		return new ResponseEntity<BooleanResult>(br, HttpStatus.OK);
+//	public ResponseEntity<BooleanResult> registMember(@RequestBody MemberDto member) throws Exception {
+//		logger.info("회원등록" + new Date());
+//		logger.info("회원등록" + member);
+//		boolean checkRegi = memberService.regist(member);
+//		BooleanResult br = new BooleanResult();
+//		br.setCheck(checkRegi);
+//		br.setName("regist");
+//		br.setState("success");
+//		logger.info("회원등록 checkRegi " + checkRegi);
+//		if (!checkRegi) {
+//			br.setCheck(false);
+//			br.setName("regist");
+//			br.setState("fail");
+//			return new ResponseEntity<BooleanResult>(br, HttpStatus.OK);
+//		}
+//
+//		return new ResponseEntity<BooleanResult>(br, HttpStatus.OK);
+//	}
+	public ResponseEntity<String> registMember(@RequestBody MemberDto member) throws Exception {
+		int resultCnt = memberService.regist(member);
+		if(resultCnt > 0)
+			return new ResponseEntity<String>("success", HttpStatus.OK);
+		else
+			return new ResponseEntity<String>("fail", HttpStatus.OK);
 	}
 
 	@ApiOperation(value = "회원정보 조회", response = MemberDto.class)
 	@GetMapping("/info")
+//	public ResponseEntity<Map<String, Object>> getInfo(HttpServletRequest req) {
+//		Map<String, Object> resultMap = new HashMap<>();
+//		HttpStatus status = HttpStatus.ACCEPTED;
+//		System.out.println(">>>>>> " + jwtService.get(req.getHeader("auth-token")));
+//		try {
+//			// 사용자에게 전달할 정보
+//			String info = memberService.getServerInfo();
+//
+//			resultMap.putAll(jwtService.get(req.getHeader("auth-token")));
+//			resultMap.put("status", true);
+//			resultMap.put("info", info);
+//			status = HttpStatus.ACCEPTED;
+//		} catch (RuntimeException e) {
+//			logger.error("회원정보조회 실패 : {}", e);
+//			resultMap.put("message", e.getMessage());
+//			status = HttpStatus.INTERNAL_SERVER_ERROR;
+//		}
 	public ResponseEntity<Map<String, Object>> getInfo(HttpServletRequest req) {
 		Map<String, Object> resultMap = new HashMap<>();
 		HttpStatus status = HttpStatus.ACCEPTED;
 		System.out.println(">>>>>> " + jwtService.get(req.getHeader("auth-token")));
 		try {
-			// 사용자에게 전달할 정보
-			String info = memberService.getServerInfo();
-
 			resultMap.putAll(jwtService.get(req.getHeader("auth-token")));
-			resultMap.put("status", true);
-			resultMap.put("info", info);
 			status = HttpStatus.ACCEPTED;
 		} catch (RuntimeException e) {
 			logger.error("회원정보조회 실패 : {}", e);
 			resultMap.put("message", e.getMessage());
 			status = HttpStatus.INTERNAL_SERVER_ERROR;
 		}
-
+		
 		return new ResponseEntity<Map<String, Object>>(resultMap, status);
 	}
 
 	@ApiOperation(value = "회원정보 수정 ", response = BooleanResult.class)
 	@PutMapping("/update")
-	public ResponseEntity<BooleanResult> updateMember(@RequestBody MemberDto member) throws Exception {
-		logger.info("회원 정보 수정 " + new Date());
-		logger.info("회원 정보 수정" + member);
-		boolean checkUpdate = memberService.update(member);
-		BooleanResult br = new BooleanResult();
-		br.setCheck(checkUpdate);
-		br.setName("update");
-		br.setState("success");
-		if (!checkUpdate) {
-			br.setCheck(false);
-			br.setName("regist");
-			br.setState("fail");
-
-			return new ResponseEntity<BooleanResult>(HttpStatus.NO_CONTENT);
-		}
-
-		return new ResponseEntity<BooleanResult>(br, HttpStatus.OK);
+//	public ResponseEntity<BooleanResult> updateMember(@RequestBody MemberDto member) throws Exception {
+//		logger.info("회원 정보 수정 " + new Date());
+//		logger.info("회원 정보 수정" + member);
+//		boolean checkUpdate = memberService.update(member);
+//		BooleanResult br = new BooleanResult();
+//		br.setCheck(checkUpdate);
+//		br.setName("update");
+//		br.setState("success");
+//		if (!checkUpdate) {
+//			br.setCheck(false);
+//			br.setName("regist");
+//			br.setState("fail");
+//
+//			return new ResponseEntity<BooleanResult>(HttpStatus.NO_CONTENT);
+//		}
+//
+//		return new ResponseEntity<BooleanResult>(br, HttpStatus.OK);
+//	}
+	public ResponseEntity<String> updateMember(@RequestBody MemberDto member) throws Exception {
+		int resultCnt = memberService.update(member);
+		if(resultCnt > 0)
+			return new ResponseEntity<String>("success", HttpStatus.OK);
+		else
+			return new ResponseEntity<String>("fail", HttpStatus.OK);
 	}
 
 	@ApiOperation(value = "회원탈퇴", response = BooleanResult.class)
 	@DeleteMapping("/delete")
-	public ResponseEntity<BooleanResult> deleteMember(@RequestBody String userid) throws Exception {
-		logger.info("회원 정보 삭제 !!!!" + new Date());
-		logger.info("회원 정보 삭제 !!!!" + userid);
-		boolean checkdelete = memberService.delete(userid);
-		BooleanResult br = new BooleanResult();
-		br.setCheck(checkdelete);
-		br.setName("delete");
-		br.setState("success");
-		
-		return new ResponseEntity<BooleanResult>(br, HttpStatus.OK);
+//	public ResponseEntity<BooleanResult> deleteMember(@RequestBody String userid) throws Exception {
+//		logger.info("회원 정보 삭제 !!!!" + new Date());
+//		logger.info("회원 정보 삭제 !!!!" + userid);
+//		boolean checkdelete = memberService.delete(userid);
+//		BooleanResult br = new BooleanResult();
+//		br.setCheck(checkdelete);
+//		br.setName("delete");
+//		br.setState("success");
+//		
+//		return new ResponseEntity<BooleanResult>(br, HttpStatus.OK);
+//	}
+	public ResponseEntity<String> deleteMember(MemberDto member) throws Exception {
+		int resultCnt = memberService.delete(member);
+		if(resultCnt > 0)
+			return new ResponseEntity<String>("success", HttpStatus.OK);
+		else
+			return new ResponseEntity<String>("fail", HttpStatus.OK);
 	}
 }

@@ -13,6 +13,6 @@ public interface MemberMapper {
 	public int regist(MemberDto member);
 	public MemberDto read(String userid);
 	public int update(MemberDto member);
-	public int delete(String userid);
+	public int delete(MemberDto member);
 	
 }

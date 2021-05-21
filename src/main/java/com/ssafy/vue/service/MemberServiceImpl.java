@@ -19,8 +19,8 @@ public class MemberServiceImpl implements MemberService {
 	}
 
 	@Override
-	public boolean regist(MemberDto member) throws Exception {
-		return mDao.getMapper(MemberMapper.class).regist(member)==1;
+	public int regist(MemberDto member) throws Exception {
+		return mDao.getMapper(MemberMapper.class).regist(member);
 	}
 
 	@Override
@@ -29,13 +29,13 @@ public class MemberServiceImpl implements MemberService {
 	}
 
 	@Override
-	public boolean update(MemberDto member) throws Exception {
-		return mDao.getMapper(MemberMapper.class).update(member)==1;
+	public int update(MemberDto member) throws Exception {
+		return mDao.getMapper(MemberMapper.class).update(member);
 	}
 
 	@Override
-	public boolean delete(String userid) throws Exception {
-		return mDao.getMapper(MemberMapper.class).delete(userid)==1;
+	public int delete(MemberDto member) throws Exception {
+		return mDao.getMapper(MemberMapper.class).delete(member);
 	}
 
 	@Override
