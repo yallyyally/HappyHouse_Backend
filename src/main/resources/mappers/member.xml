@@ -21,7 +21,7 @@
 	<!--  <select id="read" parameterType="String" resultType="MemberDto">
 		select userid, username, userpwd, phone, email, joindate
 		from member
-		where userid = ${userid}
+		where userid = ${value}
 	</select> -->
 	
 	<!-- 회원 정보 수정 -->
