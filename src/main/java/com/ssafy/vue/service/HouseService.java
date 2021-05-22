@@ -11,4 +11,5 @@ public interface HouseService {
 	public List<HouseDealDto> getHouseDealList(String dong, String aptname);
 	public List<HouseInfoDto> getHouseInfoList();
 	public List<HouseInfoDto> searchHouseInfo(SearchHouseDealDto searchHouseDealDto);
+	public List<String> getOptionsGu();
 }

@@ -44,4 +44,9 @@
 		and cast(replace(d.high,',','') as unsigned int) &lt;= #{dealamount_end}
 		and cast(replace(d.low,',','') as unsigned int) &gt;= #{dealamount_start}
 	</select>
+	
+	<select id="getOptionsGu" resultType="String">
+		select guName
+		from seoulGu
+	</select>
 </mapper>

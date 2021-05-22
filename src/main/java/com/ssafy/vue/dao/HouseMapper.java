@@ -14,4 +14,5 @@ public interface HouseMapper {
 	public List<HouseDealDto> getHouseDealList(Map map);
 	public List<HouseInfoDto> getHouseInfoList();
 	public List<HouseInfoDto> searchHouseInfo(SearchHouseDealDto searchHouseDealDto);
+	public List<String> getOptionsGu();
 }

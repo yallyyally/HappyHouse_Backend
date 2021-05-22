@@ -37,5 +37,10 @@ public class HouseServiceImpl implements HouseService {
 		return hdao.getMapper(HouseMapper.class).searchHouseInfo(searchHouseDealDto);
 	}
 
+	@Override
+	public List<String> getOptionsGu() {
+		return hdao.getMapper(HouseMapper.class).getOptionsGu();
+	}
+
 
 }

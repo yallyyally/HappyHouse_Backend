@@ -67,6 +67,11 @@ public class HouseController {
 		return new ResponseEntity<List<HouseInfoDto>> (houseService.searchHouseInfo(searchHouseDeal), HttpStatus.OK);
 	}
 	
-	
+	@GetMapping("/optionsGu")
+	@ApiOperation(value="전체 구 목록 반환")
+	public ResponseEntity<List<String>> getOptionsGu(){
+		logger.debug("구 목록 호출~");
+		return new ResponseEntity<List<String>>(houseService.getOptionsGu(),HttpStatus.OK);
+	}
 	
 }
