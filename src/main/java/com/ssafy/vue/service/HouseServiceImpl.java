@@ -53,6 +53,11 @@ public class HouseServiceImpl implements HouseService {
 	@Override
 	public List<HouseInfoDto> getHouseInfoByDong(String dongName) {
 		return hdao.getMapper(HouseMapper.class).getHouseInfoByDong(dongName);
+	}
+
+	@Override
+	public List<HouseInfoDto> getHouseInfoByGu(String guName) {
+		return hdao.getMapper(HouseMapper.class).getHouseInfoByGu(guName);
 	}	
 
 

@@ -14,4 +14,5 @@ public interface HouseService {
 	public List<String> getOptionsGu();
 	public List<String> getOptionsDong(String selectedGu);
 	public List<HouseInfoDto> getHouseInfoByDong(String dongName);
+	public List<HouseInfoDto> getHouseInfoByGu(String guName);
 }

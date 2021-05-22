@@ -18,4 +18,5 @@ public interface HouseMapper {
 	public List<String> getOptionsDong(String selectedGu);
 	public List<String> getAllOptionsDong();
 	public List<HouseInfoDto> getHouseInfoByDong(String dongName);
+	public List<HouseInfoDto> getHouseInfoByGu(String guName);
 }

@@ -62,7 +62,12 @@ public class HouseController {
 	public ResponseEntity<List<HouseInfoDto>> getHouseInfoByDong(@PathVariable String dongName){
 		 return new ResponseEntity<List<HouseInfoDto>>(houseService.getHouseInfoByDong(dongName),HttpStatus.OK);
 	}
-
+	@GetMapping("/houseinfo/gu/{guName}")
+	@ApiOperation(value="매물목록 반환 - 구 전체 매물")
+	public ResponseEntity<List<HouseInfoDto>> getHouseInfoByGu(@PathVariable String guName){
+		return new ResponseEntity<List<HouseInfoDto>>(houseService.getHouseInfoByGu(guName),HttpStatus.OK);
+	}
+	
 //	매물 검색~ -> 특정 가격대의 houseinfo 찾기 위해 join 필요.
 	@PostMapping("/houseinfo")
 	@ApiOperation(value = "매물 목록 검색 - houseinfo, by 가격 (from join housedeal), 동네, 아파트명")
