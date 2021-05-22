@@ -44,10 +44,10 @@ public class HouseServiceImpl implements HouseService {
 
 	@Override
 	public List<String> getOptionsDong(String selectedGu) {
-		if(selectedGu != null)
-			return hdao.getMapper(HouseMapper.class).getOptionsDong(selectedGu);
-		else
+		if(selectedGu.equals("null"))
 			return hdao.getMapper(HouseMapper.class).getAllOptionsDong();
+		else
+			return hdao.getMapper(HouseMapper.class).getOptionsDong(selectedGu);
 	}	
 
 

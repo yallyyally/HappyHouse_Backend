@@ -77,7 +77,7 @@ public class HouseController {
 	@GetMapping("/optionsDong/{selectedGu}")
 	@ApiOperation(value = "선택된 구에 따른 동 목록 반환 -> null 일 경우 전체")
 	public ResponseEntity<List<String>> getOptionsDong(@PathVariable String selectedGu) {
-		if (selectedGu == null) {
+		if (selectedGu.equals("null")) {
 			System.out.println("전체 동 가져오기");
 		} else
 			System.out.println(selectedGu + "소속 동 가져오기");
