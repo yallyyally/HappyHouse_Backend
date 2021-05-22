@@ -12,7 +12,7 @@ target/
 .settings
 .springBeans
 .sts4-cache
-
+.metadata
 ### IntelliJ IDEA ###
 .idea
 *.iws
@@ -35,3 +35,4 @@ build/
 *.log
 *.log
 log/log.log
+.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1621652133132/common/js/application.js
