@@ -48,6 +48,11 @@ public class HouseServiceImpl implements HouseService {
 			return hdao.getMapper(HouseMapper.class).getAllOptionsDong();
 		else
 			return hdao.getMapper(HouseMapper.class).getOptionsDong(selectedGu);
+	}
+
+	@Override
+	public List<HouseInfoDto> getHouseInfoByDong(String dongName) {
+		return hdao.getMapper(HouseMapper.class).getHouseInfoByDong(dongName);
 	}	
 
 

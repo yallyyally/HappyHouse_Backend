@@ -66,4 +66,16 @@
 		select dong
 		from seouldong
 	</select>
+	
+<!-- 	인자: 동 이름 / 결과: houseinfo -->
+	<select id="getHouseInfoByDong" resultType="houseinfodto" parameterType="String">
+		select i.no,i.dong,i.aptname,i.code,i.buildyear,i.jibun,i.lat,i.lng,i.img, d.high,d.low
+		from houseinfo i
+		join 
+		(select aptname, dong,max(dealamount) high, min(dealamount) low from housedeal group by dong,aptname) d
+		on
+		i.aptname = d.aptname and i.dong = d.dong
+		where i.dong = #{dongName}
+		order by no desc
+	</select>
 </mapper>
