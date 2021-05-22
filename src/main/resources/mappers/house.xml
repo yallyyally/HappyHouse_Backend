@@ -34,19 +34,36 @@
 	</select>
 
 	<!-- houseinfo 검색 by 가격, 아파트명, 동네명 -->
-<!-- 	부등호 쓰면 안되서 시간 엄청 잡아먹음,, -->
-	<select id="searchHouseInfo" resultType="houseinfodto" parameterType="searchhousedealdto">
-		select i.no,i.dong,i.aptname,i.code,i.buildyear,i.jibun,i.lat,i.lng,i.img, d.high,d.low
+	<!-- 부등호 쓰면 안되서 시간 엄청 잡아먹음,, -->
+	<select id="searchHouseInfo" resultType="houseinfodto"
+		parameterType="searchhousedealdto">
+		select
+		i.no,i.dong,i.aptname,i.code,i.buildyear,i.jibun,i.lat,i.lng,i.img,
+		d.high,d.low
 		from houseinfo i
-		join (select aptname, dong,max(dealamount) high, min(dealamount) low from housedeal group by dong,aptname) d
-		on i.aptname = d.aptname and i.dong = d.dong
-		where i.dong LIKE '%${dong}%' AND i.aptname LIKE '%${aptname}%' 
+		join (select aptname, dong,max(dealamount)
+		high, min(dealamount) low from housedeal group by dong,aptname) d
+		on
+		i.aptname = d.aptname and i.dong = d.dong
+		where i.dong LIKE '%${dong}%'
+		AND i.aptname LIKE '%${aptname}%'
 		and cast(replace(d.high,',','') as unsigned int) &lt;= #{dealamount_end}
-		and cast(replace(d.low,',','') as unsigned int) &gt;= #{dealamount_start}
+		and cast(replace(d.low,',','') as unsigned int) &gt;=
+		#{dealamount_start}
 	</select>
-	
+
 	<select id="getOptionsGu" resultType="String">
 		select guName
 		from seoulGu
+	</select>
+	<select id="getOptionsDong" resultType="String" parameterType="String">
+		select d.dong
+		from seouldong d join seoulgu g
+		on d.guNum = g.no
+		where g.guname=#{selectedGu}
+	</select>
+	<select id="getAllOptionsDong" resultType="String">
+		select dong
+		from seouldong
 	</select>
 </mapper>
