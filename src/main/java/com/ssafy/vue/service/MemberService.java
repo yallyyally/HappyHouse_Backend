@@ -6,7 +6,7 @@ public interface MemberService {
 
 //	public MemberDto login(MemberDto member) throws Exception;
 //	public boolean regist(MemberDto member) throws Exception;
-//	public MemberDto read(String userid) throws Exception;
+	public MemberDto read(String userid) throws Exception;
 //	public boolean update(MemberDto member) throws Exception;
 //	public boolean delete(String userid) throws Exception;
 //	public String getServerInfo();
