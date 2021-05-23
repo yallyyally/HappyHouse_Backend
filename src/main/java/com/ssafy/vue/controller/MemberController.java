@@ -120,16 +120,20 @@ public class MemberController {
 //		try {
 //			// 사용자에게 전달할 정보
 //			String info = memberService.getServerInfo();
-//
+//			
 //			resultMap.putAll(jwtService.get(req.getHeader("auth-token")));
+//
 //			resultMap.put("status", true);
 //			resultMap.put("info", info);
 //			status = HttpStatus.ACCEPTED;
 //		} catch (RuntimeException e) {
-//			logger.error("회원정보조회 실패 : {}", e);
+//			logger.error("정보조회 실패 : {}", e);
 //			resultMap.put("message", e.getMessage());
 //			status = HttpStatus.INTERNAL_SERVER_ERROR;
 //		}
+//		
+//		return new ResponseEntity<Map<String, Object>>(resultMap, status);
+//	}
 	
 	@ApiOperation(value = "회원 정보를 반환한다", response = List.class)
 	@GetMapping("/info")

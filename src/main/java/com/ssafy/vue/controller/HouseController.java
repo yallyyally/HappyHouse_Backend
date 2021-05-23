@@ -46,6 +46,13 @@ public class HouseController {
 	public ResponseEntity<List<HouseDealDto>> getHouseDealList(@RequestParam(value = "dong") String dong,
 			@RequestParam(value = "aptname") String aptname) {
 		logger.debug("getHouseDealList 호출스~");
+		dong = dong.substring(1, dong.length()-1);
+		aptname = aptname.substring(1, aptname.length()-1);
+		System.out.println("동이름 "+dong+"아파트명 "+aptname);
+		List<HouseDealDto> list = houseService.getHouseDealList(dong, aptname);
+		System.out.println("출력해보기");
+		for(HouseDealDto deal : list)
+			System.out.println(deal);
 		return new ResponseEntity<List<HouseDealDto>>(houseService.getHouseDealList(dong, aptname), HttpStatus.OK);
 	}
 
@@ -54,6 +61,7 @@ public class HouseController {
 	@ApiOperation(value = "매물 목록 반환 -  houseinfo 정보 모두.")
 	public ResponseEntity<List<HouseInfoDto>> getHouseInfoList() {
 		logger.debug("getHouseInfoList 호출스~");
+		
 		return new ResponseEntity<List<HouseInfoDto>>(houseService.getHouseInfoList(), HttpStatus.OK);
 	}
 	
