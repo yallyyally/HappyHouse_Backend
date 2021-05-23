@@ -53,39 +53,36 @@ public class BoardController {
 	}
 
     @ApiOperation(value = "글번호에 해당하는 게시글의 정보를 반환한다.", response = BoardDto.class)    
-	@GetMapping("/detail/{no}")
-	public ResponseEntity<BoardDto> detailBoard(@PathVariable int no) {
+	@GetMapping("/detail/{bno}")
+	public ResponseEntity<BoardDto> detailBoard(@PathVariable int bno) {
 		logger.debug("detailBoard - 호출");
-		return new ResponseEntity<BoardDto>(boardService.detailBoard(no), HttpStatus.OK);
+		return new ResponseEntity<BoardDto>(boardService.detailBoard(bno), HttpStatus.OK);
 	}
 
     @ApiOperation(value = "새로운 게시글 정보를 입력한다. 그리고 DB입력 성공여부에 따라 'success' 또는 'fail' 문자열을 반환한다.", response = String.class)
 	@PostMapping(value="/write")
 	public ResponseEntity<String> writeBoard(@RequestBody BoardDto board) {
 		logger.debug("writeBoard - 호출");
-		if (boardService.writeBoard(board)) {
-			return new ResponseEntity<String>(SUCCESS, HttpStatus.OK);
-		}
-		return new ResponseEntity<String>(FAIL, HttpStatus.NO_CONTENT);
+		boardService.writeBoard(board);
+		
+		return new ResponseEntity<String>(SUCCESS, HttpStatus.OK);
 	}
 
     @ApiOperation(value = "글번호에 해당하는 게시글의 정보를 수정한다. 그리고 DB수정 성공여부에 따라 'success' 또는 'fail' 문자열을 반환한다.", response = String.class)
-	@PutMapping("/update/{no}")
+	@PutMapping("/update/{bno}")
 	public ResponseEntity<String> updateBoard(@RequestBody BoardDto board) {
 		logger.debug("updateBoard - 호출");
 		logger.debug("" + board);
+		boardService.updateBoard(board);
 		
-		if (boardService.updateBoard(board)) {
-			return new ResponseEntity<String>(SUCCESS, HttpStatus.OK);
-		}
-		return new ResponseEntity<String>(FAIL, HttpStatus.NO_CONTENT);
+		return new ResponseEntity<String>(SUCCESS, HttpStatus.OK);
 	}
 
     @ApiOperation(value = "글번호에 해당하는 게시글의 정보를 삭제한다. 그리고 DB삭제 성공여부에 따라 'success' 또는 'fail' 문자열을 반환한다.", response = String.class)
-	@DeleteMapping("/delete/{no}")
-	public ResponseEntity<String> deleteBoard(@PathVariable int no) {
+	@DeleteMapping("/delete/{bno}")
+	public ResponseEntity<String> deleteBoard(@PathVariable int bno) {
 		logger.debug("deleteBoard - 호출");
-		if (boardService.deleteBoard(no)) {
+		if (boardService.deleteBoard(bno)<1) {
 			return new ResponseEntity<String>(SUCCESS, HttpStatus.OK);
 		}
 		return new ResponseEntity<String>(FAIL, HttpStatus.NO_CONTENT);

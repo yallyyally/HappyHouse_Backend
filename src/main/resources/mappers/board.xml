@@ -35,8 +35,7 @@
 	<!-- 게시글 수정 -->
 	<update id="updateBoard" parameterType="boardDto">
 		update board 
-		   set btitle = #{btitle}, 
-		   	   userid = #{userid}, 
+		   set btitle = #{btitle},  
 		   	   bcontent = #{bcontent}
 		 where bno = #{bno}
 	</update>

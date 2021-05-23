@@ -31,25 +31,25 @@ public class BoardServiceImpl implements BoardService {
 	}
     
   	@Override
-	public boolean writeBoard(BoardDto board) {
-		return bDao.insertBoard(board) == 1;
+	public int writeBoard(BoardDto board) {
+		return bDao.insertBoard(board);
 	}
 
 	@Override
-	public BoardDto detailBoard(int no) {
-		return bDao.selectBoardByNo(no);
-	}
-
-	@Override
-	@Transactional
-	public boolean updateBoard(BoardDto board) {
-		return bDao.updateBoard(board) == 1;
+	public BoardDto detailBoard(int bno) {
+		return bDao.selectBoardByNo(bno);
 	}
 
 	@Override
 	@Transactional
-	public boolean deleteBoard(int no) {
-		return bDao.deleteBoard(no) == 1;
+	public int updateBoard(BoardDto board) {
+		return bDao.updateBoard(board);
+	}
+
+	@Override
+	@Transactional
+	public int deleteBoard(int bno) {
+		return bDao.deleteBoard(bno);
 	}
 
 	@Override
@@ -68,8 +68,8 @@ public class BoardServiceImpl implements BoardService {
 	}
 
 	@Override
-	public boolean deleteComment(int no) {
-		return cDao.deleteComment(no) == 1;
+	public boolean deleteComment(int bno) {
+		return cDao.deleteComment(bno) == 1;
 	}
 
 }
