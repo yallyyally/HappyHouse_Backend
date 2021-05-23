@@ -111,47 +111,47 @@ public class MemberController {
 			return new ResponseEntity<String>("fail", HttpStatus.OK);
 	}
 
-//	@ApiOperation(value = "회원정보 조회", response = MemberDto.class)
-//	@GetMapping("/info")
-//	public ResponseEntity<Map<String, Object>> getInfo(HttpServletRequest req) {
-//		Map<String, Object> resultMap = new HashMap<>();
-//		HttpStatus status = HttpStatus.ACCEPTED;
-//		System.out.println(">>>>>> " + jwtService.get(req.getHeader("auth-token")));
-//		try {
-//			// 사용자에게 전달할 정보
-//			String info = memberService.getServerInfo();
-//			
-//			resultMap.putAll(jwtService.get(req.getHeader("auth-token")));
-//
-//			resultMap.put("status", true);
-//			resultMap.put("info", info);
-//			status = HttpStatus.ACCEPTED;
-//		} catch (RuntimeException e) {
-//			logger.error("정보조회 실패 : {}", e);
-//			resultMap.put("message", e.getMessage());
-//			status = HttpStatus.INTERNAL_SERVER_ERROR;
-//		}
-//		
-//		return new ResponseEntity<Map<String, Object>>(resultMap, status);
-//	}
-	
-	@ApiOperation(value = "회원 정보를 반환한다", response = List.class)
+	@ApiOperation(value = "회원정보 조회", response = MemberDto.class)
 	@GetMapping("/info")
 	public ResponseEntity<Map<String, Object>> getInfo(HttpServletRequest req) {
 		Map<String, Object> resultMap = new HashMap<>();
 		HttpStatus status = HttpStatus.ACCEPTED;
 		System.out.println(">>>>>> " + jwtService.get(req.getHeader("auth-token")));
 		try {
+			// 사용자에게 전달할 정보
+			String info = memberService.getServerInfo();
+			
 			resultMap.putAll(jwtService.get(req.getHeader("auth-token")));
+
+			resultMap.put("status", true);
+			resultMap.put("info", info);
 			status = HttpStatus.ACCEPTED;
 		} catch (RuntimeException e) {
-			logger.error("회원정보조회 실패 : {}", e);
+			logger.error("정보조회 실패 : {}", e);
 			resultMap.put("message", e.getMessage());
 			status = HttpStatus.INTERNAL_SERVER_ERROR;
 		}
 		
 		return new ResponseEntity<Map<String, Object>>(resultMap, status);
 	}
+	
+//	@ApiOperation(value = "회원 정보를 반환한다", response = List.class)
+//	@GetMapping("/info")
+//	public ResponseEntity<Map<String, Object>> getInfo(HttpServletRequest req) {
+//		Map<String, Object> resultMap = new HashMap<>();
+//		HttpStatus status = HttpStatus.ACCEPTED;
+//		System.out.println(">>>>>> " + jwtService.get(req.getHeader("auth-token")));
+//		try {
+//			resultMap.putAll(jwtService.get(req.getHeader("auth-token")));
+//			status = HttpStatus.ACCEPTED;
+//		} catch (RuntimeException e) {
+//			logger.error("회원정보조회 실패 : {}", e);
+//			resultMap.put("message", e.getMessage());
+//			status = HttpStatus.INTERNAL_SERVER_ERROR;
+//		}
+//		
+//		return new ResponseEntity<Map<String, Object>>(resultMap, status);
+//	}
 
 //	@ApiOperation(value = "회원정보 수정 ", response = BooleanResult.class)
 //	@PutMapping("/update")
