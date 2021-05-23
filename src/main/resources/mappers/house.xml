@@ -12,7 +12,8 @@
 		FROM
 		housedeal
 		WHERE dong=#{dong} AND aptname=#{aptname}
-		ORDER BY no DESC
+		ORDER BY cast(dealyear as unsigned int),cast(dealmonth as unsigned int),
+        cast(dealday as unsigned int)
 	</select>
 
 	<!-- houseinfo 전체 조회 + 최저, 최고 -->
