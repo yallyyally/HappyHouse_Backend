@@ -660,454 +660,524 @@ java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'string' for 
 
 [2m2021-05-22 01:18:53.550[0;39m [32m INFO[0;39m [35m15880[0;39m [2m---[0;39m [2m[on(2)-127.0.0.1][0;39m [36minMXBeanRegistrar$SpringApplicationAdmin[0;39m [2m:[0;39m Application shutdown requested.
 [2m2021-05-22 01:18:55.754[0;39m [32m INFO[0;39m [35m15880[0;39m [2m---[0;39m [2m[on(2)-127.0.0.1][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Shutting down ExecutorService 'applicationTaskExecutor'
-[2m2021-05-22 13:20:00.490[0;39m [32m INFO[0;39m [35m1940[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[2m2021-05-22 13:20:00.493[0;39m [32m INFO[0;39m [35m1940[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[2m2021-05-22 13:20:01.981[0;39m [32m INFO[0;39m [35m1940[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 9999 (http)
-[2m2021-05-22 13:20:02.071[0;39m [32m INFO[0;39m [35m1940[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 1578 ms
-[2m2021-05-22 13:20:02.965[0;39m [32m INFO[0;39m [35m1940[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Initializing ExecutorService 'applicationTaskExecutor'
-[2m2021-05-22 13:20:03.013[0;39m [32m INFO[0;39m [35m1940[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
-[2m2021-05-22 13:20:03.201[0;39m [32m INFO[0;39m [35m1940[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 9999 (http) with context path '/vue'
-[2m2021-05-22 13:20:14.791[0;39m [32m INFO[0;39m [35m1940[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Initializing Servlet 'dispatcherServlet'
-[2m2021-05-22 13:20:14.800[0;39m [32m INFO[0;39m [35m1940[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed initialization in 7 ms
-[2m2021-05-22 13:20:14.846[0;39m [32mDEBUG[0;39m [35m1940[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 13:20:14.850[0;39m [32mDEBUG[0;39m [35m1940[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 13:31:58.870[0;39m [32mDEBUG[0;39m [35m1940[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 13:31:59.032[0;39m [32mDEBUG[0;39m [35m1940[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 13:32:22.227[0;39m [32mDEBUG[0;39m [35m1940[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 13:32:22.230[0;39m [32mDEBUG[0;39m [35m1940[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 13:32:59.556[0;39m [32mDEBUG[0;39m [35m1940[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 13:32:59.559[0;39m [32mDEBUG[0;39m [35m1940[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 13:34:17.889[0;39m [32mDEBUG[0;39m [35m1940[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 13:34:17.897[0;39m [32mDEBUG[0;39m [35m1940[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 13:34:26.313[0;39m [32mDEBUG[0;39m [35m1940[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 13:34:26.314[0;39m [32mDEBUG[0;39m [35m1940[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 13:37:25.032[0;39m [32mDEBUG[0;39m [35m1940[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 13:37:25.061[0;39m [32mDEBUG[0;39m [35m1940[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 13:37:26.598[0;39m [32mDEBUG[0;39m [35m1940[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 13:37:26.634[0;39m [32mDEBUG[0;39m [35m1940[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 13:37:28.612[0;39m [32mDEBUG[0;39m [35m1940[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 13:37:28.761[0;39m [32mDEBUG[0;39m [35m1940[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 14:01:28.794[0;39m [32m INFO[0;39m [35m1940[0;39m [2m---[0;39m [2m[on(2)-127.0.0.1][0;39m [36minMXBeanRegistrar$SpringApplicationAdmin[0;39m [2m:[0;39m Application shutdown requested.
-[2m2021-05-22 14:01:28.953[0;39m [32m INFO[0;39m [35m1940[0;39m [2m---[0;39m [2m[on(2)-127.0.0.1][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Shutting down ExecutorService 'applicationTaskExecutor'
-[2m2021-05-22 16:40:53.796[0;39m [32m INFO[0;39m [35m8616[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[2m2021-05-22 16:40:53.798[0;39m [32m INFO[0;39m [35m8616[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[2m2021-05-22 16:40:54.551[0;39m [32m INFO[0;39m [35m8616[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 9999 (http)
-[2m2021-05-22 16:40:54.599[0;39m [32m INFO[0;39m [35m8616[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 801 ms
-[2m2021-05-22 16:40:55.090[0;39m [32m INFO[0;39m [35m8616[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Initializing ExecutorService 'applicationTaskExecutor'
-[2m2021-05-22 16:40:55.114[0;39m [32m INFO[0;39m [35m8616[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
-[2m2021-05-22 16:40:55.214[0;39m [32m INFO[0;39m [35m8616[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 9999 (http) with context path '/vue'
-[2m2021-05-22 16:41:17.675[0;39m [32m INFO[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Initializing Servlet 'dispatcherServlet'
-[2m2021-05-22 16:41:17.684[0;39m [32m INFO[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed initialization in 9 ms
-[2m2021-05-22 16:41:17.708[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 16:41:17.708[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 16:44:55.400[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 16:44:55.400[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 16:44:58.090[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 16:44:58.090[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 16:47:29.723[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 16:47:29.725[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 16:47:30.318[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 16:47:30.320[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 16:47:34.457[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 16:47:34.457[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 16:48:31.706[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 16:48:31.706[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 16:48:32.261[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 16:48:32.261[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 16:48:32.321[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 16:48:32.523[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 16:50:11.283[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 16:50:11.283[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 16:50:23.556[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 16:50:23.556[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 16:50:24.091[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 16:50:24.100[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 16:50:24.269[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 16:50:24.398[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 16:50:24.430[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 16:50:24.667[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 16:56:53.523[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 16:56:53.523[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 16:57:19.967[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 16:57:19.967[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 16:57:50.671[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 16:57:50.671[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 16:57:51.068[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 16:57:51.069[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 16:57:56.456[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 16:57:56.456[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 16:58:08.294[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 16:58:08.296[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 16:58:09.128[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 16:58:09.128[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 16:58:10.983[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 16:58:10.983[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 16:58:51.980[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 16:58:51.980[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 16:58:52.155[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 16:58:52.237[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 16:58:52.969[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 16:58:52.983[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 16:58:56.060[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 16:58:56.060[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 16:59:11.165[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 16:59:11.165[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 16:59:27.201[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 16:59:27.201[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 16:59:27.232[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 16:59:27.326[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 16:59:27.556[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 16:59:27.786[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 16:59:27.878[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 16:59:28.176[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 16:59:29.296[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 16:59:29.297[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:00:39.082[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:00:39.082[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:00:39.175[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:00:39.342[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:00:39.353[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:00:39.648[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:00:39.667[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:00:39.926[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:00:40.001[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:00:40.264[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:02:02.507[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:02:02.508[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:02:03.334[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:02:03.334[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:02:03.441[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:02:03.579[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:02:03.596[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:02:03.863[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:02:04.021[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:02:04.142[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:03:16.982[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:03:16.982[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:03:45.906[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:03:45.906[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:04:59.752[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:04:59.752[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:07:58.934[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:07:58.942[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:07:58.946[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:07:58.950[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:07:58.954[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:07:58.981[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:08:08.362[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:08:08.363[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:08:44.764[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:08:44.764[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:15:10.857[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:15:10.857[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:16:18.160[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:16:18.160[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:18:47.185[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:18:47.185[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:22:13.416[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:22:13.416[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:22:13.627[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:22:13.630[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:22:21.898[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:22:21.898[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:25:40.896[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:25:40.896[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:25:41.064[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:25:41.137[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:25:41.231[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:25:41.407[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:25:51.580[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:25:51.580[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:26:41.097[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:26:41.113[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:26:41.139[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:26:41.578[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:26:51.448[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:26:51.448[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:27:36.822[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:27:36.826[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:27:36.836[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:27:36.846[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:27:45.282[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:27:45.282[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:29:21.501[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:29:21.501[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:29:22.093[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:29:22.096[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:29:22.513[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:29:22.515[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:29:23.066[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:29:23.067[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:29:23.168[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:29:23.343[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:29:43.864[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:29:43.865[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:29:44.669[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:29:44.670[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:29:44.676[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:29:44.761[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:29:44.940[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:29:45.205[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:29:45.488[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:29:45.488[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:30:02.878[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:30:04.669[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:30:04.669[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:30:10.019[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:30:10.019[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:30:10.318[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:30:10.329[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:30:10.528[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:30:10.675[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:30:11.375[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:30:11.375[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:30:31.381[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:30:31.382[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:32:46.966[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:32:46.966[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:32:47.354[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:32:47.356[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:32:47.411[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:32:47.494[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:32:47.637[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:32:47.905[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:32:50.794[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:32:50.794[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:33:21.413[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:33:21.413[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:33:22.441[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:33:22.441[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:33:22.644[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:33:22.699[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:33:22.709[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:33:22.771[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:33:22.996[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:33:23.280[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:34:17.520[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:34:17.520[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:34:18.272[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:34:18.273[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:34:18.595[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:34:18.595[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:34:18.788[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:34:18.877[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:34:19.092[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:34:19.184[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:34:37.069[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:34:37.069[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:34:42.329[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:34:42.330[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:34:45.148[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:34:45.148[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:34:45.434[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:34:45.452[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:34:45.483[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:34:45.820[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:34:46.234[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:34:46.235[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:35:13.603[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:35:13.603[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:35:13.622[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:35:13.819[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:35:13.923[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:35:14.259[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:35:14.330[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:35:14.616[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:36:16.436[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:36:16.443[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:36:16.446[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:36:16.887[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:36:20.187[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:36:20.187[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:37:05.221[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:37:05.228[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:37:05.274[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:37:05.279[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:37:05.848[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:37:09.319[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:37:09.319[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:39:30.619[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:39:30.619[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:39:31.679[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:39:31.680[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:39:32.324[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:39:32.324[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:39:32.455[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:39:32.473[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:39:32.600[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:39:32.866[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:39:32.951[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:39:32.954[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:39:39.650[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:39:39.650[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:40:25.459[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:40:25.459[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:40:27.003[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:40:27.004[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:40:27.109[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:40:27.259[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:40:27.503[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:40:27.528[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:40:27.942[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:40:27.942[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:40:28.668[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:40:28.668[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:40:28.855[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:40:28.937[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:42:01.432[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:42:01.432[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:46:46.036[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:46:46.036[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:46:56.001[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:46:56.001[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:47:30.522[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:47:30.986[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:47:39.719[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:47:39.719[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:48:23.094[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:48:23.094[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:48:23.845[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:48:23.853[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:48:24.023[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:48:24.140[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:48:28.384[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:48:28.384[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:50:31.269[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:50:31.284[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:50:31.362[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:50:31.461[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:50:31.562[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:50:31.835[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:50:32.262[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:50:32.262[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:50:35.778[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 17:50:35.778[0;39m [32mDEBUG[0;39m [35m8616[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 17:54:10.579[0;39m [32m INFO[0;39m [35m8616[0;39m [2m---[0;39m [2m[on(2)-127.0.0.1][0;39m [36minMXBeanRegistrar$SpringApplicationAdmin[0;39m [2m:[0;39m Application shutdown requested.
-[2m2021-05-22 17:54:10.740[0;39m [32m INFO[0;39m [35m8616[0;39m [2m---[0;39m [2m[on(2)-127.0.0.1][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Shutting down ExecutorService 'applicationTaskExecutor'
-[2m2021-05-22 19:55:42.883[0;39m [32m INFO[0;39m [35m27460[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[2m2021-05-22 19:55:42.885[0;39m [32m INFO[0;39m [35m27460[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[2m2021-05-22 19:55:43.777[0;39m [32m INFO[0;39m [35m27460[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 9999 (http)
-[2m2021-05-22 19:55:43.839[0;39m [32m INFO[0;39m [35m27460[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 953 ms
-[2m2021-05-22 19:55:44.442[0;39m [32m INFO[0;39m [35m27460[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Initializing ExecutorService 'applicationTaskExecutor'
-[2m2021-05-22 19:55:44.476[0;39m [32m INFO[0;39m [35m27460[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
-[2m2021-05-22 19:55:44.597[0;39m [32m INFO[0;39m [35m27460[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 9999 (http) with context path '/vue'
-[2m2021-05-22 19:56:08.225[0;39m [32m INFO[0;39m [35m27460[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Initializing Servlet 'dispatcherServlet'
-[2m2021-05-22 19:56:08.230[0;39m [32m INFO[0;39m [35m27460[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed initialization in 5 ms
-[2m2021-05-22 19:56:19.689[0;39m [32mDEBUG[0;39m [35m27460[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 19:58:14.721[0;39m [32m INFO[0;39m [35m27460[0;39m [2m---[0;39m [2m[on(2)-127.0.0.1][0;39m [36minMXBeanRegistrar$SpringApplicationAdmin[0;39m [2m:[0;39m Application shutdown requested.
-[2m2021-05-22 19:58:14.833[0;39m [32m INFO[0;39m [35m27460[0;39m [2m---[0;39m [2m[on(2)-127.0.0.1][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Shutting down ExecutorService 'applicationTaskExecutor'
-[2m2021-05-22 20:04:12.551[0;39m [32m INFO[0;39m [35m6588[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[2m2021-05-22 20:04:12.552[0;39m [32m INFO[0;39m [35m6588[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[2m2021-05-22 20:04:13.335[0;39m [32m INFO[0;39m [35m6588[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 9999 (http)
-[2m2021-05-22 20:04:13.391[0;39m [32m INFO[0;39m [35m6588[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 838 ms
-[2m2021-05-22 20:04:13.931[0;39m [32m INFO[0;39m [35m6588[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Initializing ExecutorService 'applicationTaskExecutor'
-[2m2021-05-22 20:04:13.958[0;39m [32m INFO[0;39m [35m6588[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
-[2m2021-05-22 20:04:14.069[0;39m [32m INFO[0;39m [35m6588[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 9999 (http) with context path '/vue'
-[2m2021-05-22 20:04:15.504[0;39m [32m INFO[0;39m [35m6588[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Initializing Servlet 'dispatcherServlet'
-[2m2021-05-22 20:04:15.510[0;39m [32m INFO[0;39m [35m6588[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed initialization in 6 ms
-[2m2021-05-22 20:04:15.539[0;39m [32mDEBUG[0;39m [35m6588[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 20:04:15.539[0;39m [32mDEBUG[0;39m [35m6588[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 20:04:29.828[0;39m [32mDEBUG[0;39m [35m6588[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 20:04:29.828[0;39m [32mDEBUG[0;39m [35m6588[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 20:05:01.425[0;39m [32mDEBUG[0;39m [35m6588[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 20:05:01.425[0;39m [32mDEBUG[0;39m [35m6588[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 20:06:01.097[0;39m [32m INFO[0;39m [35m6588[0;39m [2m---[0;39m [2m[       Thread-5][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Shutting down ExecutorService 'applicationTaskExecutor'
-[2m2021-05-22 20:06:01.436[0;39m [32m INFO[0;39m [35m6588[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 9999 (http)
-[2m2021-05-22 20:06:01.444[0;39m [32m INFO[0;39m [35m6588[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 240 ms
-[2m2021-05-22 20:06:01.595[0;39m [32m INFO[0;39m [35m6588[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Initializing ExecutorService 'applicationTaskExecutor'
-[2m2021-05-22 20:06:01.599[0;39m [32m INFO[0;39m [35m6588[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
-[2m2021-05-22 20:06:01.636[0;39m [32m INFO[0;39m [35m6588[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 9999 (http) with context path '/vue'
-[2m2021-05-22 20:06:01.704[0;39m [32m INFO[0;39m [35m6588[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.ConditionEvaluationDeltaLoggingListener[0;39m [2m:[0;39m Condition evaluation unchanged
-[2m2021-05-22 20:06:27.723[0;39m [32m INFO[0;39m [35m6588[0;39m [2m---[0;39m [2m[       Thread-9][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Shutting down ExecutorService 'applicationTaskExecutor'
-[2m2021-05-22 20:06:28.065[0;39m [32m INFO[0;39m [35m6588[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 9999 (http)
-[2m2021-05-22 20:06:28.072[0;39m [32m INFO[0;39m [35m6588[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 219 ms
-[2m2021-05-22 20:06:28.213[0;39m [32m INFO[0;39m [35m6588[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Initializing ExecutorService 'applicationTaskExecutor'
-[2m2021-05-22 20:06:28.217[0;39m [32m INFO[0;39m [35m6588[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
-[2m2021-05-22 20:06:28.253[0;39m [32m INFO[0;39m [35m6588[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 9999 (http) with context path '/vue'
-[2m2021-05-22 20:06:28.316[0;39m [32m INFO[0;39m [35m6588[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.ConditionEvaluationDeltaLoggingListener[0;39m [2m:[0;39m Condition evaluation unchanged
-[2m2021-05-22 20:06:33.609[0;39m [32m INFO[0;39m [35m18652[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[2m2021-05-22 20:06:33.610[0;39m [32m INFO[0;39m [35m18652[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[2m2021-05-22 20:06:34.393[0;39m [32m INFO[0;39m [35m18652[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 9999 (http)
-[2m2021-05-22 20:06:34.441[0;39m [32m INFO[0;39m [35m18652[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 830 ms
-[2m2021-05-22 20:06:34.980[0;39m [32m INFO[0;39m [35m18652[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Initializing ExecutorService 'applicationTaskExecutor'
-[2m2021-05-22 20:06:35.003[0;39m [33m WARN[0;39m [35m18652[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m Unable to start LiveReload server
-[2m2021-05-22 20:06:35.107[0;39m [33m WARN[0;39m [35m18652[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mConfigServletWebServerApplicationContext[0;39m [2m:[0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 9999 is already in use
-[2m2021-05-22 20:06:35.109[0;39m [32m INFO[0;39m [35m18652[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Shutting down ExecutorService 'applicationTaskExecutor'
-[2m2021-05-22 20:06:35.120[0;39m [32m INFO[0;39m [35m18652[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mConditionEvaluationReportLoggingListener[0;39m [2m:[0;39m 
+[2m2021-05-22 19:28:10.030[0;39m [32m INFO[0;39m [35m20748[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2m2021-05-22 19:28:10.049[0;39m [32m INFO[0;39m [35m20748[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2m2021-05-22 19:28:40.746[0;39m [32m INFO[0;39m [35m20748[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 9999 (http)
+[2m2021-05-22 19:28:46.936[0;39m [32m INFO[0;39m [35m20748[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 36858 ms
+[2m2021-05-22 19:29:04.164[0;39m [32m INFO[0;39m [35m20748[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Initializing ExecutorService 'applicationTaskExecutor'
+[2m2021-05-22 19:29:04.991[0;39m [32m INFO[0;39m [35m20748[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
+[2m2021-05-22 19:29:10.245[0;39m [32m INFO[0;39m [35m20748[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 9999 (http) with context path '/vue'
+[2m2021-05-22 19:43:21.881[0;39m [32m INFO[0;39m [35m20748[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Initializing Servlet 'dispatcherServlet'
+[2m2021-05-22 19:43:23.283[0;39m [32m INFO[0;39m [35m20748[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed initialization in 1314 ms
+[2m2021-05-22 20:23:39.483[0;39m [32mDEBUG[0;39m [35m20748[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
+[2m2021-05-22 20:23:39.483[0;39m [32mDEBUG[0;39m [35m20748[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
+[2m2021-05-22 20:24:25.662[0;39m [31mERROR[0;39m [35m20748[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mo.a.c.c.C.[.[.[.[dispatcherServlet]     [0;39m [2m:[0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [/vue] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Table 'happyhouse.seoulgu' doesn't exist
+### The error may exist in file [C:\Users\llgyw\git\happyhouse_final_backend\target\classes\mappers\house.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select guName   from seoulGu
+### Cause: java.sql.SQLSyntaxErrorException: Table 'happyhouse.seoulgu' doesn't exist
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Table 'happyhouse.seoulgu' doesn't exist] with root cause
 
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-[2m2021-05-22 20:06:35.123[0;39m [31mERROR[0;39m [35m18652[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.LoggingFailureAnalysisReporter  [0;39m [2m:[0;39m 
+java.sql.SQLSyntaxErrorException: Table 'happyhouse.seoulgu' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:89)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy69.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:223)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy98.getOptionsGu(Unknown Source)
+	at com.ssafy.vue.service.HouseServiceImpl.getOptionsGu(HouseServiceImpl.java:42)
+	at com.ssafy.vue.controller.HouseController.getOptionsGu(HouseController.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
 
-***************************
-APPLICATION FAILED TO START
-***************************
+[2m2021-05-22 20:24:26.770[0;39m [31mERROR[0;39m [35m20748[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mo.a.c.c.C.[Tomcat].[localhost]          [0;39m [2m:[0;39m Exception Processing ErrorPage[errorCode=0, location=/error]
 
-Description:
+org.apache.catalina.connector.ClientAbortException: java.io.IOException: 현재 연결은 사용자의 호스트 시스템의 소프트웨어의 의해 중단되었습니다
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:309)
+	at org.apache.catalina.connector.OutputBuffer.flush(OutputBuffer.java:272)
+	at org.apache.catalina.connector.CoyoteOutputStream.flush(CoyoteOutputStream.java:118)
+	at com.fasterxml.jackson.core.json.UTF8JsonGenerator.flush(UTF8JsonGenerator.java:1176)
+	at com.fasterxml.jackson.databind.ObjectWriter.writeValue(ObjectWriter.java:1008)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.writeInternal(AbstractJackson2HttpMessageConverter.java:342)
+	at org.springframework.http.converter.AbstractGenericHttpMessageConverter.write(AbstractGenericHttpMessageConverter.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:277)
+	at org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor.handleReturnValue(HttpEntityMethodProcessor.java:219)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:82)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:123)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:398)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:257)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:352)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:177)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: 현재 연결은 사용자의 호스트 시스템의 소프트웨어의 의해 중단되었습니다
+	at sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:51)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:471)
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:138)
+	at org.apache.tomcat.util.net.NioBlockingSelector.write(NioBlockingSelector.java:101)
+	at org.apache.tomcat.util.net.NioSelectorPool.write(NioSelectorPool.java:152)
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1253)
+	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:764)
+	at org.apache.tomcat.util.net.SocketWrapperBase.flushBlocking(SocketWrapperBase.java:717)
+	at org.apache.tomcat.util.net.SocketWrapperBase.flush(SocketWrapperBase.java:707)
+	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.flush(Http11OutputBuffer.java:572)
+	at org.apache.coyote.http11.filters.ChunkedOutputFilter.flush(ChunkedOutputFilter.java:157)
+	at org.apache.coyote.http11.Http11OutputBuffer.flush(Http11OutputBuffer.java:220)
+	at org.apache.coyote.http11.Http11Processor.flush(Http11Processor.java:1195)
+	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:399)
+	at org.apache.coyote.Response.action(Response.java:209)
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:305)
+	... 52 common frames omitted
 
-Web server failed to start. Port 9999 was already in use.
+[2m2021-05-22 20:46:05.581[0;39m [32m INFO[0;39m [35m20748[0;39m [2m---[0;39m [2m[on(2)-127.0.0.1][0;39m [36minMXBeanRegistrar$SpringApplicationAdmin[0;39m [2m:[0;39m Application shutdown requested.
+[2m2021-05-22 20:46:20.443[0;39m [32m INFO[0;39m [35m20748[0;39m [2m---[0;39m [2m[on(2)-127.0.0.1][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+[2m2021-05-22 20:52:24.922[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2m2021-05-22 20:52:24.942[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2m2021-05-22 20:52:33.371[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 9999 (http)
+[2m2021-05-22 20:52:34.060[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 9100 ms
+[2m2021-05-22 20:52:38.423[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Initializing ExecutorService 'applicationTaskExecutor'
+[2m2021-05-22 20:52:38.646[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
+[2m2021-05-22 20:52:39.739[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 9999 (http) with context path '/vue'
+[2m2021-05-22 20:53:49.290[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Initializing Servlet 'dispatcherServlet'
+[2m2021-05-22 20:53:49.315[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed initialization in 22 ms
+[2m2021-05-22 21:50:28.749[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[       Thread-5][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+[2m2021-05-22 21:51:00.012[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 9999 (http)
+[2m2021-05-22 21:51:00.262[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 20494 ms
+[2m2021-05-22 21:51:02.061[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Initializing ExecutorService 'applicationTaskExecutor'
+[2m2021-05-22 21:51:02.102[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
+[2m2021-05-22 21:51:02.486[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 9999 (http) with context path '/vue'
+[2m2021-05-22 21:51:03.005[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.ConditionEvaluationDeltaLoggingListener[0;39m [2m:[0;39m Condition evaluation unchanged
+[2m2021-05-22 21:51:48.469[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[       Thread-9][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+[2m2021-05-22 21:51:53.805[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 9999 (http)
+[2m2021-05-22 21:51:53.909[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 4315 ms
+[2m2021-05-22 21:51:56.224[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Initializing ExecutorService 'applicationTaskExecutor'
+[2m2021-05-22 21:51:56.297[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
+[2m2021-05-22 21:51:56.876[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 9999 (http) with context path '/vue'
+[2m2021-05-22 21:51:57.336[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.ConditionEvaluationDeltaLoggingListener[0;39m [2m:[0;39m Condition evaluation unchanged
+[2m2021-05-22 21:55:12.303[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[      Thread-14][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+[2m2021-05-22 21:55:15.299[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 9999 (http)
+[2m2021-05-22 21:55:15.462[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 2615 ms
+[2m2021-05-22 21:55:16.350[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Initializing ExecutorService 'applicationTaskExecutor'
+[2m2021-05-22 21:55:16.380[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
+[2m2021-05-22 21:55:16.746[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 9999 (http) with context path '/vue'
+[2m2021-05-22 21:55:17.110[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.ConditionEvaluationDeltaLoggingListener[0;39m [2m:[0;39m Condition evaluation unchanged
+[2m2021-05-22 21:55:34.782[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[      Thread-19][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+[2m2021-05-22 21:55:37.226[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 9999 (http)
+[2m2021-05-22 21:55:37.302[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 2084 ms
+[2m2021-05-22 21:55:38.159[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Initializing ExecutorService 'applicationTaskExecutor'
+[2m2021-05-22 21:55:38.186[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
+[2m2021-05-22 21:55:38.478[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 9999 (http) with context path '/vue'
+[2m2021-05-22 21:55:38.983[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.ConditionEvaluationDeltaLoggingListener[0;39m [2m:[0;39m Condition evaluation unchanged
+[2m2021-05-22 21:57:49.144[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[      Thread-24][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+[2m2021-05-22 21:57:52.397[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 9999 (http)
+[2m2021-05-22 21:57:52.468[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 2882 ms
+[2m2021-05-22 21:57:53.296[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Initializing ExecutorService 'applicationTaskExecutor'
+[2m2021-05-22 21:57:53.323[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
+[2m2021-05-22 21:57:53.654[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 9999 (http) with context path '/vue'
+[2m2021-05-22 21:57:54.007[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.ConditionEvaluationDeltaLoggingListener[0;39m [2m:[0;39m Condition evaluation unchanged
+[2m2021-05-22 21:57:59.480[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[      Thread-29][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+[2m2021-05-22 21:58:01.746[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 9999 (http)
+[2m2021-05-22 21:58:01.825[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 1842 ms
+[2m2021-05-22 21:58:02.636[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Initializing ExecutorService 'applicationTaskExecutor'
+[2m2021-05-22 21:58:02.664[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
+[2m2021-05-22 21:58:02.980[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 9999 (http) with context path '/vue'
+[2m2021-05-22 21:58:03.303[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.ConditionEvaluationDeltaLoggingListener[0;39m [2m:[0;39m Condition evaluation unchanged
+[2m2021-05-22 22:02:03.607[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[      Thread-34][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+[2m2021-05-22 22:02:07.146[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 9999 (http)
+[2m2021-05-22 22:02:07.231[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 3027 ms
+[2m2021-05-22 22:02:08.651[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Initializing ExecutorService 'applicationTaskExecutor'
+[2m2021-05-22 22:02:08.681[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
+[2m2021-05-22 22:02:09.383[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 9999 (http) with context path '/vue'
+[2m2021-05-22 22:02:09.728[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.ConditionEvaluationDeltaLoggingListener[0;39m [2m:[0;39m Condition evaluation unchanged
+[2m2021-05-22 22:03:51.431[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Initializing Servlet 'dispatcherServlet'
+[2m2021-05-22 22:03:51.490[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed initialization in 56 ms
+[2m2021-05-22 22:07:00.793[0;39m [31mERROR[0;39m [35m7612[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mo.a.c.c.C.[.[.[.[dispatcherServlet]     [0;39m [2m:[0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [/vue] threw exception [Request processing failed; nested exception is java.lang.RuntimeException] with root cause
 
-Action:
+java.lang.RuntimeException: null
+	at com.ssafy.vue.service.JwtService.get(JwtService.java:57)
+	at com.ssafy.vue.controller.MemberController.getInfo(MemberController.java:119)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
 
-Identify and stop the process that's listening on port 9999 or configure this application to listen on another port.
+[2m2021-05-22 22:07:16.660[0;39m [31mERROR[0;39m [35m7612[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mo.a.c.c.C.[.[.[.[dispatcherServlet]     [0;39m [2m:[0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [/vue] threw exception [Request processing failed; nested exception is java.lang.RuntimeException] with root cause
 
-[2m2021-05-22 20:06:59.777[0;39m [32m INFO[0;39m [35m6588[0;39m [2m---[0;39m [2m[on(2)-127.0.0.1][0;39m [36minMXBeanRegistrar$SpringApplicationAdmin[0;39m [2m:[0;39m Application shutdown requested.
-[2m2021-05-22 20:06:59.889[0;39m [32m INFO[0;39m [35m6588[0;39m [2m---[0;39m [2m[on(2)-127.0.0.1][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Shutting down ExecutorService 'applicationTaskExecutor'
-[2m2021-05-22 20:07:55.868[0;39m [32m INFO[0;39m [35m14860[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[2m2021-05-22 20:07:55.870[0;39m [32m INFO[0;39m [35m14860[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[2m2021-05-22 20:07:56.654[0;39m [32m INFO[0;39m [35m14860[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 9999 (http)
-[2m2021-05-22 20:07:56.701[0;39m [32m INFO[0;39m [35m14860[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 830 ms
-[2m2021-05-22 20:07:57.224[0;39m [32m INFO[0;39m [35m14860[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Initializing ExecutorService 'applicationTaskExecutor'
-[2m2021-05-22 20:07:57.245[0;39m [32m INFO[0;39m [35m14860[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
-[2m2021-05-22 20:07:57.385[0;39m [32m INFO[0;39m [35m14860[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 9999 (http) with context path '/vue'
-[2m2021-05-22 20:08:08.393[0;39m [32m INFO[0;39m [35m14860[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Initializing Servlet 'dispatcherServlet'
-[2m2021-05-22 20:08:08.397[0;39m [32m INFO[0;39m [35m14860[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed initialization in 4 ms
-[2m2021-05-22 20:08:08.426[0;39m [32mDEBUG[0;39m [35m14860[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 20:08:08.426[0;39m [32mDEBUG[0;39m [35m14860[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 20:09:42.194[0;39m [32m INFO[0;39m [35m14860[0;39m [2m---[0;39m [2m[on(2)-127.0.0.1][0;39m [36minMXBeanRegistrar$SpringApplicationAdmin[0;39m [2m:[0;39m Application shutdown requested.
-[2m2021-05-22 20:09:42.304[0;39m [32m INFO[0;39m [35m14860[0;39m [2m---[0;39m [2m[on(2)-127.0.0.1][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Shutting down ExecutorService 'applicationTaskExecutor'
-[2m2021-05-22 20:12:59.861[0;39m [32m INFO[0;39m [35m23308[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[2m2021-05-22 20:12:59.862[0;39m [32m INFO[0;39m [35m23308[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[2m2021-05-22 20:13:00.597[0;39m [32m INFO[0;39m [35m23308[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 9999 (http)
-[2m2021-05-22 20:13:00.647[0;39m [32m INFO[0;39m [35m23308[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 784 ms
-[2m2021-05-22 20:13:01.178[0;39m [32m INFO[0;39m [35m23308[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Initializing ExecutorService 'applicationTaskExecutor'
-[2m2021-05-22 20:13:01.201[0;39m [32m INFO[0;39m [35m23308[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
-[2m2021-05-22 20:13:01.303[0;39m [32m INFO[0;39m [35m23308[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 9999 (http) with context path '/vue'
-[2m2021-05-22 20:13:24.091[0;39m [32m INFO[0;39m [35m23308[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Initializing Servlet 'dispatcherServlet'
-[2m2021-05-22 20:13:24.096[0;39m [32m INFO[0;39m [35m23308[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed initialization in 4 ms
-[2m2021-05-22 20:13:24.124[0;39m [32mDEBUG[0;39m [35m23308[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 20:13:24.124[0;39m [32mDEBUG[0;39m [35m23308[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 20:15:03.983[0;39m [32mDEBUG[0;39m [35m23308[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 20:15:12.622[0;39m [32mDEBUG[0;39m [35m23308[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 20:15:12.622[0;39m [32mDEBUG[0;39m [35m23308[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 20:17:01.341[0;39m [32mDEBUG[0;39m [35m23308[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 20:17:01.342[0;39m [32mDEBUG[0;39m [35m23308[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 20:18:57.952[0;39m [32mDEBUG[0;39m [35m23308[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 20:18:58.437[0;39m [32mDEBUG[0;39m [35m23308[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 20:19:14.870[0;39m [32mDEBUG[0;39m [35m23308[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 20:19:14.870[0;39m [32mDEBUG[0;39m [35m23308[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 20:21:15.275[0;39m [32mDEBUG[0;39m [35m23308[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 20:21:15.275[0;39m [32mDEBUG[0;39m [35m23308[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 20:24:47.416[0;39m [32mDEBUG[0;39m [35m23308[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 20:24:47.423[0;39m [32mDEBUG[0;39m [35m23308[0;39m [2m---[0;39m [2m[nio-9999-exec-6][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 20:24:47.821[0;39m [32mDEBUG[0;39m [35m23308[0;39m [2m---[0;39m [2m[nio-9999-exec-7][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 20:24:57.734[0;39m [32mDEBUG[0;39m [35m23308[0;39m [2m---[0;39m [2m[nio-9999-exec-9][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 20:24:57.734[0;39m [32mDEBUG[0;39m [35m23308[0;39m [2m---[0;39m [2m[nio-9999-exec-8][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 20:25:21.740[0;39m [32mDEBUG[0;39m [35m23308[0;39m [2m---[0;39m [2m[io-9999-exec-10][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 20:25:21.754[0;39m [32mDEBUG[0;39m [35m23308[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 20:25:21.785[0;39m [32mDEBUG[0;39m [35m23308[0;39m [2m---[0;39m [2m[nio-9999-exec-2][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 20:25:22.241[0;39m [32mDEBUG[0;39m [35m23308[0;39m [2m---[0;39m [2m[nio-9999-exec-3][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 20:25:27.172[0;39m [32mDEBUG[0;39m [35m23308[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m getHouseInfoList 호출스~
-[2m2021-05-22 20:25:27.172[0;39m [32mDEBUG[0;39m [35m23308[0;39m [2m---[0;39m [2m[nio-9999-exec-4][0;39m [36mc.ssafy.vue.controller.HouseController  [0;39m [2m:[0;39m 구 목록 호출~
-[2m2021-05-22 20:32:07.814[0;39m [32m INFO[0;39m [35m23308[0;39m [2m---[0;39m [2m[on(2)-127.0.0.1][0;39m [36minMXBeanRegistrar$SpringApplicationAdmin[0;39m [2m:[0;39m Application shutdown requested.
-[2m2021-05-22 20:32:07.924[0;39m [32m INFO[0;39m [35m23308[0;39m [2m---[0;39m [2m[on(2)-127.0.0.1][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Shutting down ExecutorService 'applicationTaskExecutor'
-[2m2021-05-22 20:42:03.510[0;39m [32m INFO[0;39m [35m11388[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[2m2021-05-22 20:42:03.511[0;39m [32m INFO[0;39m [35m11388[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[2m2021-05-22 20:42:04.309[0;39m [32m INFO[0;39m [35m11388[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 9999 (http)
-[2m2021-05-22 20:42:04.359[0;39m [32m INFO[0;39m [35m11388[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 848 ms
-[2m2021-05-22 20:42:04.882[0;39m [32m INFO[0;39m [35m11388[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Initializing ExecutorService 'applicationTaskExecutor'
-[2m2021-05-22 20:42:04.905[0;39m [32m INFO[0;39m [35m11388[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
-[2m2021-05-22 20:42:05.008[0;39m [32m INFO[0;39m [35m11388[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 9999 (http) with context path '/vue'
-[2m2021-05-22 20:42:13.163[0;39m [32m INFO[0;39m [35m11388[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Initializing Servlet 'dispatcherServlet'
-[2m2021-05-22 20:42:13.167[0;39m [32m INFO[0;39m [35m11388[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed initialization in 4 ms
-[2m2021-05-22 20:42:58.146[0;39m [32m INFO[0;39m [35m11388[0;39m [2m---[0;39m [2m[on(2)-127.0.0.1][0;39m [36minMXBeanRegistrar$SpringApplicationAdmin[0;39m [2m:[0;39m Application shutdown requested.
-[2m2021-05-22 20:42:58.256[0;39m [32m INFO[0;39m [35m11388[0;39m [2m---[0;39m [2m[on(2)-127.0.0.1][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+java.lang.RuntimeException: null
+	at com.ssafy.vue.service.JwtService.get(JwtService.java:57)
+	at com.ssafy.vue.controller.MemberController.getInfo(MemberController.java:119)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+[2m2021-05-22 22:07:20.204[0;39m [31mERROR[0;39m [35m7612[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mo.a.c.c.C.[.[.[.[dispatcherServlet]     [0;39m [2m:[0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [/vue] threw exception [Request processing failed; nested exception is java.lang.RuntimeException] with root cause
+
+java.lang.RuntimeException: null
+	at com.ssafy.vue.service.JwtService.get(JwtService.java:57)
+	at com.ssafy.vue.controller.MemberController.getInfo(MemberController.java:119)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+[2m2021-05-22 22:10:46.265[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[      Thread-39][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+[2m2021-05-22 22:10:49.916[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 9999 (http)
+[2m2021-05-22 22:10:50.100[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 2978 ms
+[2m2021-05-22 22:10:51.342[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Initializing ExecutorService 'applicationTaskExecutor'
+[2m2021-05-22 22:10:51.369[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
+[2m2021-05-22 22:10:51.665[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 9999 (http) with context path '/vue'
+[2m2021-05-22 22:10:52.108[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.ConditionEvaluationDeltaLoggingListener[0;39m [2m:[0;39m Condition evaluation unchanged
+[2m2021-05-22 22:11:21.327[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[      Thread-44][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+[2m2021-05-22 22:11:25.176[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 9999 (http)
+[2m2021-05-22 22:11:25.279[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 3205 ms
+[2m2021-05-22 22:11:26.101[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Initializing ExecutorService 'applicationTaskExecutor'
+[2m2021-05-22 22:11:26.128[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
+[2m2021-05-22 22:11:26.583[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 9999 (http) with context path '/vue'
+[2m2021-05-22 22:11:27.030[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.ConditionEvaluationDeltaLoggingListener[0;39m [2m:[0;39m Condition evaluation unchanged
+[2m2021-05-22 22:12:06.941[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[      Thread-49][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+[2m2021-05-22 22:12:09.867[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 9999 (http)
+[2m2021-05-22 22:12:09.999[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 2529 ms
+[2m2021-05-22 22:12:10.765[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Initializing ExecutorService 'applicationTaskExecutor'
+[2m2021-05-22 22:12:10.793[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
+[2m2021-05-22 22:12:11.081[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 9999 (http) with context path '/vue'
+[2m2021-05-22 22:12:11.363[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.ConditionEvaluationDeltaLoggingListener[0;39m [2m:[0;39m Condition evaluation unchanged
+[2m2021-05-22 22:12:51.204[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[      Thread-54][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+[2m2021-05-22 22:12:56.336[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 9999 (http)
+[2m2021-05-22 22:12:56.529[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 4356 ms
+[2m2021-05-22 22:12:57.649[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Initializing ExecutorService 'applicationTaskExecutor'
+[2m2021-05-22 22:12:57.677[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
+[2m2021-05-22 22:12:58.015[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 9999 (http) with context path '/vue'
+[2m2021-05-22 22:12:58.365[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.ConditionEvaluationDeltaLoggingListener[0;39m [2m:[0;39m Condition evaluation unchanged
+[2m2021-05-22 22:14:21.627[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[      Thread-59][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+[2m2021-05-22 22:14:24.360[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 9999 (http)
+[2m2021-05-22 22:14:24.813[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 2710 ms
+[2m2021-05-22 22:14:26.124[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Initializing ExecutorService 'applicationTaskExecutor'
+[2m2021-05-22 22:14:26.155[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
+[2m2021-05-22 22:14:26.467[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 9999 (http) with context path '/vue'
+[2m2021-05-22 22:14:26.820[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.ConditionEvaluationDeltaLoggingListener[0;39m [2m:[0;39m Condition evaluation unchanged
+[2m2021-05-22 22:14:41.717[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Initializing Servlet 'dispatcherServlet'
+[2m2021-05-22 22:14:41.730[0;39m [32m INFO[0;39m [35m7612[0;39m [2m---[0;39m [2m[nio-9999-exec-1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed initialization in 9 ms
+[2m2021-05-22 22:33:35.070[0;39m [31mERROR[0;39m [35m7612[0;39m [2m---[0;39m [2m[nio-9999-exec-5][0;39m [36mo.a.c.c.C.[Tomcat].[localhost]          [0;39m [2m:[0;39m Exception Processing ErrorPage[errorCode=0, location=/error]
+
+org.apache.catalina.connector.ClientAbortException: java.io.IOException: 현재 연결은 사용자의 호스트 시스템의 소프트웨어의 의해 중단되었습니다
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:309)
+	at org.apache.catalina.connector.OutputBuffer.flush(OutputBuffer.java:272)
+	at org.apache.catalina.connector.CoyoteOutputStream.flush(CoyoteOutputStream.java:118)
+	at org.springframework.http.converter.AbstractGenericHttpMessageConverter.write(AbstractGenericHttpMessageConverter.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:277)
+	at org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor.handleReturnValue(HttpEntityMethodProcessor.java:219)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:82)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:123)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:398)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:257)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:179)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: 현재 연결은 사용자의 호스트 시스템의 소프트웨어의 의해 중단되었습니다
+	at sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:51)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:471)
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:138)
+	at org.apache.tomcat.util.net.NioBlockingSelector.write(NioBlockingSelector.java:101)
+	at org.apache.tomcat.util.net.NioSelectorPool.write(NioSelectorPool.java:152)
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1253)
+	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:764)
+	at org.apache.tomcat.util.net.SocketWrapperBase.flushBlocking(SocketWrapperBase.java:717)
+	at org.apache.tomcat.util.net.SocketWrapperBase.flush(SocketWrapperBase.java:707)
+	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.flush(Http11OutputBuffer.java:572)
+	at org.apache.coyote.http11.filters.ChunkedOutputFilter.flush(ChunkedOutputFilter.java:157)
+	at org.apache.coyote.http11.Http11OutputBuffer.flush(Http11OutputBuffer.java:220)
+	at org.apache.coyote.http11.Http11Processor.flush(Http11Processor.java:1195)
+	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:399)
+	at org.apache.coyote.Response.action(Response.java:209)
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:305)
+	... 48 common frames omitted
+
