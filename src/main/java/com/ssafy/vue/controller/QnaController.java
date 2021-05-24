@@ -52,40 +52,40 @@ public class QnaController {
 	}
 	
 //	특정 질문 불러오기
-	@GetMapping("/question/{num}")
+	@GetMapping("/question/{qnaNum}")
 	@ApiOperation(value="특정 질문 조회")
-	public ResponseEntity<QuestionDto> readQuestion(@PathVariable int num){
-		return new ResponseEntity<QuestionDto> (questionService.readQuestion(num),HttpStatus.OK);
+	public ResponseEntity<QuestionDto> readQuestion(@PathVariable int qnaNum){
+		return new ResponseEntity<QuestionDto> (questionService.readQuestion(qnaNum),HttpStatus.OK);
 	}
 	
 //	질문 수정 -> 답변이 하나 이상 있는 질문은 수정할 수 없도록 조치.
 //	프론트에서 나중에 답변 수를 state로 관리해서 조치해도 될듯
-	@GetMapping("/question/{num}/edit")
+	@GetMapping("/question/{qnaNum}/edit")
 	@ApiOperation(value="질문 수정페이지 이동 - 답변이 하나 이상 있는 질문은 수정 불가")
 //	answerService 메소드 빌려 써도 될듯.
-	public ResponseEntity questionEditPossible(@PathVariable int num) {
-		if(questionService.countAnswer(num) != 0)
+	public ResponseEntity questionEditPossible(@PathVariable int qnaNum) {
+		if(questionService.countAnswer(qnaNum) != 0)
 			return new ResponseEntity<>("impossible",HttpStatus.OK);
 		else 
 			return new ResponseEntity<>("possible",HttpStatus.OK);
 	}
 
 //	질문 수정
-	@PutMapping("/question/{num}")
+	@PutMapping("/question/{qnaNum}")
 	@ApiOperation(value="num번째 질문 수정쓰")
-	public ResponseEntity updateQuestion(@PathVariable int num, @RequestBody QuestionDto questionDto) {
-		questionService.updateQuestion(num, questionDto);
+	public ResponseEntity updateQuestion(@PathVariable int qnaNum, @RequestBody QuestionDto questionDto) {
+		questionService.updateQuestion(qnaNum, questionDto);
 		return new ResponseEntity<>(HttpStatus.OK);
 	}
 	
 //	질문 삭제 -> 답변이 하나 이상 있으면 삭제 못하게 조취
-	@DeleteMapping("/question/{num}/delete")
+	@DeleteMapping("/question/{qnaNum}/delete")
 	@ApiOperation(value="삭제 버튼 누르면 작동되는 메소드, 답변들도 줄줄이 삭제")
 //	answerService 메소드 빌려 써도 될듯.
-	public ResponseEntity questionDeletePossible(@PathVariable int num) {
+	public ResponseEntity questionDeletePossible(@PathVariable int qnaNum) {
 //			외래키 의존성 때문에 관련ㄷ ㅏㅂ변들 먼저 삭제해야함.
-			answerService.deleteAllAnswer(num);
-			questionService.deleteQuestion(num);
+			answerService.deleteAllAnswer(qnaNum);
+			questionService.deleteQuestion(qnaNum);
 			System.out.println(" 삭제 완");
 //			관련 답변 디비도 다 삭제해야함 ! 
 			return new ResponseEntity<>(HttpStatus.OK);
@@ -106,9 +106,9 @@ public class QnaController {
 
 	
 //	답변 목록 가져오기 - num 번째 질문.
-	@GetMapping("/answer/{num}")
-	public ResponseEntity<List<AnswerDto>> getAnswerList(@PathVariable int num){
-		return new ResponseEntity<List<AnswerDto>>(answerService.getAnswerList(num),HttpStatus.OK);
+	@GetMapping("/answer/{qnaNum}")
+	public ResponseEntity<List<AnswerDto>> getAnswerList(@PathVariable int qnaNum){
+		return new ResponseEntity<List<AnswerDto>>(answerService.getAnswerList(qnaNum),HttpStatus.OK);
 	}
 //	답변 수정
 //	현재 답변 dto 전체를 프론트에서 받아와야 할 듯.
