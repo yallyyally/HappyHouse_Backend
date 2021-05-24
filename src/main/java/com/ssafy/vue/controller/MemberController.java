@@ -118,13 +118,12 @@ public class MemberController {
 			return new ResponseEntity<String>("fail", HttpStatus.OK);
 	}
 
-	@ApiOperation(value = "회원정보 조회", response = MemberDto.class)
+//	@ApiOperation(value = "회원정보 조회", response = MemberDto.class)
 	@GetMapping("/info/{authToken}")
-	public ResponseEntity<Map<String, Object>> getInfo(HttpServletRequest req,@PathVariable String authToken
-) throws JsonProcessingException {
+	public ResponseEntity<Map<String, Object>> getInfo(HttpServletRequest req, @PathVariable String authToken) throws JsonProcessingException {
 		Map<String, Object> resultMap = new HashMap<>();
 		HttpStatus status = HttpStatus.ACCEPTED;
-		System.out.println(req.getHeader("auth-token"));
+//		System.out.println(req.getHeader("auth-token"));
 		System.out.println("@@@@@@@@@@@@문제!@@@@@@@@@@@@@@@@@@@@");
 		System.out.println(authToken);
 		
