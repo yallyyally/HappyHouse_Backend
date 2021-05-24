@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.ssafy.vue.dto.BaseaddrDto;
+import com.ssafy.vue.dto.CultureDto;
 import com.ssafy.vue.dto.HouseDealDto;
 import com.ssafy.vue.dto.HouseInfoDto;
 import com.ssafy.vue.dto.PopulationDto;
@@ -51,6 +52,12 @@ public class TownController {
 	@ApiOperation(value="구의 대표 위치 하나 반환")
 	public ResponseEntity<BaseaddrDto> getGuPosition(@PathVariable String selectedGu){
 		return new ResponseEntity<BaseaddrDto>(townService.getGuPosition(selectedGu),HttpStatus.OK);
+	}
+	
+	@GetMapping("/cultural/{selectedGu}")
+	@ApiOperation(value="문화공간들 반환")
+	public ResponseEntity<List<CultureDto>> getCulturalPlace(@PathVariable String selectedGu){
+		return new ResponseEntity<List<CultureDto>>(townService.getCulturalPlace(selectedGu),HttpStatus.OK);
 	}
 //
 //	// 디폴트 : house info 전체 보여주기
