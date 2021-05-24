@@ -5,20 +5,26 @@
 <mapper namespace="com.ssafy.vue.dao.TownMapper">
 
 
-	<select id="getPopulationInfo" resultType="PopulationDto" parameterType="String">
+	<select id="getPopulationInfo" resultType="PopulationDto"
+		parameterType="String">
 		select gugun,dong,population,movein,moveout,oneperson,
 		twoperson,threeperson,fourperson,
 		fiveperson+sixperson+sevenperson+eightperson+nineperson+tenperson
-		as morethanfiveperson
+		as
+		morethanfiveperson
 		from population
 		where gugun=#{selectedGu};
 	</select>
-	
-	<select id="getGuPosition" resultType="BaseaddrDto" parameterType="String">
-	        select lat,lng 
-	        from baseaddress 
-	        where gugun=#{selectedGu} limit 1;
+
+	<select id="getGuPosition" resultType="BaseaddrDto"
+		parameterType="String">
+		select lat,lng
+		from baseaddress
+		where gugun=#{selectedGu} limit 1;
 	</select>
 
-
+	<select id="getCulturalPlace" resultType="CultureDto" parameterType ="String">
+		select no,subject,name,address,lat,lng,telno,close,imformation from
+		culturalspace where address like '%${selectedGu}%' and lat != '곰달래로25길'
+	</select>
 </mapper>
