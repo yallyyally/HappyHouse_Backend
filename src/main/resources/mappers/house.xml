@@ -31,7 +31,8 @@
 		group by dong,aptname) d
 		on i.aptname
 		= d.aptname and i.dong = d.dong
-		order by no desc
+		order by no asc 
+		limit 1000
 	</select>
 
 	<!-- houseinfo 검색 by 가격, 아파트명, 동네명 -->

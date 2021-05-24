@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.ssafy.vue.dao.TownMapper;
+import com.ssafy.vue.dto.BaseaddrDto;
 import com.ssafy.vue.dto.HouseInfoDto;
 import com.ssafy.vue.dto.PopulationDto;
 
@@ -19,6 +20,11 @@ public class TownServiceImpl implements TownService {
 	@Override
 	public List<PopulationDto> getPopulationInfo(String selectedGu) {
 		return tDao.getMapper(TownMapper.class).getPopulationInfo(selectedGu);
+	}
+
+	@Override
+	public BaseaddrDto getGuPosition(String selectedGu) {
+		return tDao.getMapper(TownMapper.class).getGuPosition(selectedGu);
 	}
 
 }

@@ -13,6 +13,12 @@
 		from population
 		where gugun=#{selectedGu};
 	</select>
+	
+	<select id="getGuPosition" resultType="BaseaddrDto" parameterType="String">
+	        select lat,lng 
+	        from baseaddress 
+	        where gugun=#{selectedGu} limit 1;
+	</select>
 
 
 </mapper>
