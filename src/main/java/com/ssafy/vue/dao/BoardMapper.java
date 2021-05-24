@@ -11,8 +11,8 @@ public interface BoardMapper {
 	
 	public List<BoardDto> selectBoard();
 	public List<String> writerList();
-	public BoardDto selectBoardByNo(int no);
+	public BoardDto selectBoardByNo(int bno);
 	public int insertBoard(BoardDto board);
 	public int updateBoard(BoardDto board);
-	public int deleteBoard(int no);
+	public int deleteBoard(int bno);
 }
