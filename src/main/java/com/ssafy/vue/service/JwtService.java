@@ -7,6 +7,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.util.JSONPObject;
 import com.ssafy.vue.dto.MemberDto;
 
 import io.jsonwebtoken.*;
@@ -49,8 +52,21 @@ public class JwtService {
 	}
 	
 	// JWT Token을 분석해서 필요한 정보를 반환하기 
-	public Map<String, Object> get(String jwt) {
+	public Map<String, Object> get(String jwt) throws JsonProcessingException {
         Jws<Claims> claims = null;
+        System.out.println("@@@@@jwt@@@@@@@@@@"+jwt);
+        
+        
+        ObjectMapper mapper = new ObjectMapper();
+
+        JSONPObject json = new JSONPObject("JSON.parse", jwt);
+
+        String jsonStr = mapper.writeValueAsString(json);
+        System.out.println(jsonStr);
+
+
+        
+        System.out.println();
         try {
             claims = Jwts.parser().setSigningKey(signature.getBytes()).parseClaimsJws(jwt);
         } catch (final Exception e) {

@@ -18,12 +18,15 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.ssafy.vue.dto.MemberDto;
 import com.ssafy.vue.help.BooleanResult;
 import com.ssafy.vue.service.JwtService;
@@ -59,6 +62,9 @@ public class MemberController {
 				// jwt.io에서 확인
 				// 로그인 성공 -> 토큰 생성
 				String token = jwtService.create(loginMember);
+				System.out.println(token);
+				System.out.println("@@@@@@@@@@@@@@로그인 토큰@@@@@@@@@@@@@");
+				
 				logger.trace("로그인 토큰정보 : {}", token);
 
 				// 토큰 정보는 response의 헤더로 보내고 나머지는 Map에 담는다.
@@ -67,6 +73,7 @@ public class MemberController {
 				resultMap.put("userid", loginMember.getUserid());
 				resultMap.put("username", loginMember.getUsername());
 				resultMap.put("status", "success");
+				resultMap.put("message","로그인 성공");
 				// resultMap.put("data", loginMember);
 				status = HttpStatus.ACCEPTED;
 			} else {
@@ -112,16 +119,23 @@ public class MemberController {
 	}
 
 	@ApiOperation(value = "회원정보 조회", response = MemberDto.class)
-	@GetMapping("/info")
-	public ResponseEntity<Map<String, Object>> getInfo(HttpServletRequest req) {
+	@GetMapping("/info/{authToken}")
+	public ResponseEntity<Map<String, Object>> getInfo(HttpServletRequest req,@PathVariable String authToken
+) throws JsonProcessingException {
 		Map<String, Object> resultMap = new HashMap<>();
 		HttpStatus status = HttpStatus.ACCEPTED;
-		System.out.println(">>>>>> " + jwtService.get(req.getHeader("auth-token")));
+		System.out.println(req.getHeader("auth-token"));
+		System.out.println("@@@@@@@@@@@@문제!@@@@@@@@@@@@@@@@@@@@");
+		System.out.println(authToken);
+		
+//		System.out.println(">>>>>> " + jwtService.get(req.getHeader("auth-token")));
+		System.out.println(">>>>>> " + jwtService.get(authToken));
 		try {
 			// 사용자에게 전달할 정보
 			String info = memberService.getServerInfo();
 			
-			resultMap.putAll(jwtService.get(req.getHeader("auth-token")));
+//			resultMap.putAll(jwtService.get(req.getHeader("auth-token")));
+			resultMap.putAll(jwtService.get(authToken));
 
 			resultMap.put("status", true);
 			resultMap.put("info", info);
