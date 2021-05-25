@@ -57,6 +57,9 @@ public class TownController {
 	@GetMapping("/cultural/{selectedGu}")
 	@ApiOperation(value="문화공간들 반환")
 	public ResponseEntity<List<CultureDto>> getCulturalPlace(@PathVariable String selectedGu){
+//		List<CultureDto> tmp = townService.getCulturalPlace(selectedGu);
+//		for(CultureDto c : tmp)
+//			System.out.println(c);
 		return new ResponseEntity<List<CultureDto>>(townService.getCulturalPlace(selectedGu),HttpStatus.OK);
 	}
 //
