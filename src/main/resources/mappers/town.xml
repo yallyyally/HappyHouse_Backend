@@ -25,6 +25,6 @@
 
 	<select id="getCulturalPlace" resultType="CultureDto" parameterType ="String">
 		select no,subject,name,address,lat,lng,telno,close,imformation from
-		culturalspace where address like '%${selectedGu}%' and lat != '곰달래로25길'
+		culturalspace where address like '%${selectedGu}%' and lat not in('곰달래로25길','잠실역')
 	</select>
 </mapper>

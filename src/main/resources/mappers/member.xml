@@ -35,9 +35,10 @@
 	</update>
 	
 	<!-- 회원 탈퇴  -->
+
+<!-- 	deleteById할땐 왜안됐지? -->
 	<delete id="delete" parameterType="String">
 		delete from member 
-		where userid = ${userid}
+		where userid = #{userid}
 	</delete>
-	
 </mapper>

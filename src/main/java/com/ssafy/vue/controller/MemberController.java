@@ -24,6 +24,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -212,12 +213,15 @@ public class MemberController {
 //	}
 	
 	@ApiOperation(value = "회원 정보 삭제 후 성공/실패 여부를 반환한다", response = List.class)
-	@DeleteMapping("/delete")
-	public ResponseEntity<String> deleteMember(MemberDto member) throws Exception {
-		int resultCnt = memberService.delete(member);
-		if(resultCnt > 0)
+	@DeleteMapping("/delete/{userid}")
+	public ResponseEntity<String> deleteMember(@PathVariable String userid) throws Exception {
+		System.out.println(userid+"받음");
+//		int resultCnt = memberService.delete(member);
+		int resultCnt = memberService.delete(userid);
+		System.out.println("결과 "+resultCnt);
+//		if(resultCnt > 0)
 			return new ResponseEntity<String>("success", HttpStatus.OK);
-		else
-			return new ResponseEntity<String>("fail", HttpStatus.OK);
+//		else
+//			return new ResponseEntity<String>("fail", HttpStatus.OK);
 	}
 }

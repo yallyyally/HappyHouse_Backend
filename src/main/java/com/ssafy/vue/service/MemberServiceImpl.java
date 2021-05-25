@@ -42,10 +42,10 @@ public class MemberServiceImpl implements MemberService {
 //		return mDao.getMapper(MemberMapper.class).update(member)==1;
 //	}
 
-	@Override
-	public int delete(MemberDto member) throws Exception {
-		return mDao.getMapper(MemberMapper.class).delete(member);
-	}
+//	@Override
+//	public int delete(MemberDto member) throws Exception {
+//		return mDao.getMapper(MemberMapper.class).delete(member);
+//	}
 //	@Override
 //	public boolean delete(String userid) throws Exception {
 //		return mDao.getMapper(MemberMapper.class).delete(userid)==1;
@@ -54,6 +54,12 @@ public class MemberServiceImpl implements MemberService {
 	@Override
 	public String getServerInfo() {
 		return "사용자에게 전달하고 싶은 중요정보";
+	}
+
+	@Override
+	public int delete(String userid) {
+		System.out.println(userid+" 서비스에서 받음@@@@@@@@@@@@@");
+		return mDao.getMapper(MemberMapper.class).delete(userid);
 	}
 
 }
