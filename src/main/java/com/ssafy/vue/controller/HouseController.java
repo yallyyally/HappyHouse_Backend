@@ -21,6 +21,7 @@ import com.ssafy.vue.dto.HouseInfoDto;
 import com.ssafy.vue.dto.PublicBicycleDto;
 import com.ssafy.vue.dto.SchoolDto;
 import com.ssafy.vue.dto.SearchHouseDealDto;
+import com.ssafy.vue.dto.SubwayDto;
 import com.ssafy.vue.service.HouseService;
 
 import org.slf4j.Logger;
@@ -51,6 +52,7 @@ public class HouseController {
 		logger.debug("getHouseDealList 호출스~");
 		dong = dong.substring(1, dong.length()-1);
 		aptname = aptname.substring(1, aptname.length()-1);
+		System.out.println("동이름 "+dong+" 아파트 "+aptname);
 		return new ResponseEntity<List<HouseDealDto>>(houseService.getHouseDealList(dong, aptname), HttpStatus.OK);
 	}
 
@@ -115,6 +117,12 @@ public class HouseController {
 	public ResponseEntity<List<SchoolDto>> getSchoolInfo(@PathVariable String selectedGu){
 		return new ResponseEntity<List<SchoolDto>>(houseService.getSchoolInfo(selectedGu),HttpStatus.OK);
 	}
+	@GetMapping("/subway/{selectedGu}")
+	@ApiOperation(value = "선택된 구의 지하철 정보")
+	public ResponseEntity<List<SubwayDto>> getSubwayInfo(@PathVariable String selectedGu){
+		return new ResponseEntity<List<SubwayDto>>(houseService.getSubwayInfo(selectedGu),HttpStatus.OK);
+	}
+	
 
 	@GetMapping("/publicbicycle/{selectedGu}")
 	@ApiOperation(value="구의 따릉이 정류장 정보 반환")

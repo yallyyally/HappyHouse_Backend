@@ -7,11 +7,14 @@
 	<!-- housedeal 전체 조회 -->
 	<select id="getHouseDealList" parameterType="hashMap"
 		resultType="housedealdto">
-		SELECT no, dong, aptname,
-		dealamount,buildyear,dealyear,dealmonth,dealday,area,floor,jibun
+		SELECT housedeal.no, housedeal.dong, housedeal.aptname,
+		housedeal.dealamount,housedeal.buildyear,housedeal.dealyear,housedeal.dealmonth,housedeal.dealday,housedeal.area,housedeal.floor,housedeal.jibun,
+		cast(houseinfo.lat as double) lat, cast(houseinfo.lng as double) lng
 		FROM
-		housedeal
-		WHERE dong=#{dong} AND aptname=#{aptname}
+		housedeal left join houseinfo on housedeal.aptname =
+		houseinfo.aptname and housedeal.dong = houseinfo.dong
+		WHERE
+		housedeal.dong=#{dong} and housedeal.aptname=#{aptname}
 		ORDER BY
 		cast(dealyear as unsigned int),cast(dealmonth as unsigned int),
 		cast(dealday as unsigned int)
@@ -135,7 +138,17 @@
 	<select id="getCameraPos" parameterType="String"
 		resultType="cameraDto">
 		select cast(lat as double) lat, cast(lng as double) lng
-		from baseaddress where dong like '%${selectedDong}%' and lat != 0 and lng != 0 limit 1;
+		from baseaddress where dong like '%${selectedDong}%' and lat != 0 and
+		lng != 0 limit 1;
+	</select>
+
+	<!-- 인자: 구 / 결과 : 지하철 -->
+	<select id="getSubwayInfo" parameterType="String"
+		resultType="subwayDto">
+		select no, name, routename, cast(lng as double) lat, cast(lat as double)
+		lng, address, telno
+		from subway
+		where address like '%${selectedGu}%'
 	</select>
 
 	<!-- 인자: 구 / 결과: 따릉이 정류장 -->

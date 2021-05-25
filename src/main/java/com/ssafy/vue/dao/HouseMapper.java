@@ -11,6 +11,7 @@ import com.ssafy.vue.dto.HouseInfoDto;
 import com.ssafy.vue.dto.PublicBicycleDto;
 import com.ssafy.vue.dto.SchoolDto;
 import com.ssafy.vue.dto.SearchHouseDealDto;
+import com.ssafy.vue.dto.SubwayDto;
 
 @Mapper
 public interface HouseMapper {
@@ -25,4 +26,5 @@ public interface HouseMapper {
 	public List<SchoolDto> getSchoolInfo(String selectedGu);
 	public List<PublicBicycleDto> getPublicBicycle(String selectedGu);
 	public CameraDto getCameraPos(String selectedDong);
+	public List<SubwayDto> getSubwayInfo(String selectedGu);
 }

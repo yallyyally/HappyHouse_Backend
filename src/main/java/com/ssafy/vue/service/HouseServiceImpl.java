@@ -15,6 +15,7 @@ import com.ssafy.vue.dto.HouseInfoDto;
 import com.ssafy.vue.dto.PublicBicycleDto;
 import com.ssafy.vue.dto.SchoolDto;
 import com.ssafy.vue.dto.SearchHouseDealDto;
+import com.ssafy.vue.dto.SubwayDto;
 
 @Service
 public class HouseServiceImpl implements HouseService {
@@ -77,6 +78,12 @@ public class HouseServiceImpl implements HouseService {
 	public List<PublicBicycleDto> getPublicBicycle(String selectedGu) {
 		return hdao.getMapper(HouseMapper.class).getPublicBicycle(selectedGu);
 	}	
+	public List<SubwayDto> getSubwayInfo(String selectedGu) {
+		return hdao.getMapper(HouseMapper.class).getSubwayInfo(selectedGu);
+	}
+//	public List<PublicBicycleDto> getPublicBicycle(String selectedGu) {
+//		return hdao.getMapper(HouseMapper.class).getPublicBicycle(selectedGu);
+//	}	
 
 
 }
