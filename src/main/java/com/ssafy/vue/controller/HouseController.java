@@ -15,8 +15,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.ssafy.vue.dto.CameraDto;
 import com.ssafy.vue.dto.HouseDealDto;
 import com.ssafy.vue.dto.HouseInfoDto;
+import com.ssafy.vue.dto.SchoolDto;
 import com.ssafy.vue.dto.SearchHouseDealDto;
 import com.ssafy.vue.service.HouseService;
 
@@ -71,6 +73,12 @@ public class HouseController {
 		return new ResponseEntity<List<HouseInfoDto>>(houseService.getHouseInfoByGu(guName),HttpStatus.OK);
 	}
 	
+	@GetMapping("/houseinfo/camera/{selectedDong}")
+	@ApiOperation(value="선택된 동의 카메라 위경도 반환")
+	public ResponseEntity<CameraDto> getCameraPos(@PathVariable String selectedDong){
+		return new ResponseEntity<CameraDto> (houseService.getCameraPos(selectedDong),HttpStatus.OK);
+	}
+	
 //	매물 검색~ -> 특정 가격대의 houseinfo 찾기 위해 join 필요.
 	@PostMapping("/houseinfo")
 	@ApiOperation(value = "매물 목록 검색 - houseinfo, by 가격 (from join housedeal), 동네, 아파트명")
@@ -93,10 +101,18 @@ public class HouseController {
 	public ResponseEntity<List<String>> getOptionsDong(@PathVariable String selectedGu) {
 		if (selectedGu.equals("null")) {
 			System.out.println("전체 동 가져오기");
-		} else
+		} else {
+			
 			System.out.println(selectedGu + "소속 동 가져오기");
+		}
 
 		return new ResponseEntity<List<String>>(houseService.getOptionsDong(selectedGu), HttpStatus.OK);
 
 	}
+	@GetMapping("/school/{selectedGu}")
+	@ApiOperation(value="구의 학교 정보 반환")
+	public ResponseEntity<List<SchoolDto>> getSchoolInfo(@PathVariable String selectedGu){
+		return new ResponseEntity<List<SchoolDto>>(houseService.getSchoolInfo(selectedGu),HttpStatus.OK);
+	}
+
 }

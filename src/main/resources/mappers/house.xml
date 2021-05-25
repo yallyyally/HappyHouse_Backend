@@ -12,8 +12,9 @@
 		FROM
 		housedeal
 		WHERE dong=#{dong} AND aptname=#{aptname}
-		ORDER BY cast(dealyear as unsigned int),cast(dealmonth as unsigned int),
-        cast(dealday as unsigned int)
+		ORDER BY
+		cast(dealyear as unsigned int),cast(dealmonth as unsigned int),
+		cast(dealday as unsigned int)
 	</select>
 
 	<!-- houseinfo 전체 조회 + 최저, 최고 -->
@@ -31,7 +32,7 @@
 		group by dong,aptname) d
 		on i.aptname
 		= d.aptname and i.dong = d.dong
-		order by no asc 
+		order by no asc
 		limit 1000
 	</select>
 
@@ -49,8 +50,10 @@
 		i.aptname = d.aptname and i.dong = d.dong
 		where i.dong LIKE '%${dong}%'
 		AND i.aptname LIKE '%${aptname}%'
-		and cast(replace(d.high,',','') as unsigned int) &lt;= #{dealamount_end}
-		and cast(replace(d.low,',','') as unsigned int) &gt;=
+		and cast(replace(d.high,',','') as
+		unsigned int) &lt;= #{dealamount_end}
+		and cast(replace(d.low,',','') as
+		unsigned int) &gt;=
 		#{dealamount_start}
 	</select>
 
@@ -58,38 +61,81 @@
 		select guName
 		from seoulGu
 	</select>
-	<select id="getOptionsDong" resultType="String" parameterType="String">
+	<select id="getOptionsDong" resultType="String"
+		parameterType="String">
 		select d.dong
 		from seouldong d join seoulgu g
-		on d.guNum = g.no
+		on d.guNum =
+		g.no
 		where g.guname=#{selectedGu}
 	</select>
 	<select id="getAllOptionsDong" resultType="String">
 		select dong
-		from seouldong
+		from
+		seouldong
 	</select>
-	
-<!-- 	인자: 동 이름 / 결과: houseinfo -->
-	<select id="getHouseInfoByDong" resultType="houseinfodto" parameterType="String">
-		select i.no,i.dong,i.aptname,i.code,i.buildyear,i.jibun,i.lat,i.lng,i.img, d.high,d.low
+
+	<!-- 인자: 동 이름 / 결과: houseinfo -->
+	<select id="getHouseInfoByDong" resultType="houseinfodto"
+		parameterType="String">
+		select
+		i.no,i.dong,i.aptname,i.code,i.buildyear,i.jibun,i.lat,i.lng,i.img,
+		d.high,d.low
 		from houseinfo i
-		join 
-		(select aptname, dong,max(dealamount) high, min(dealamount) low from housedeal group by dong,aptname) d
+		join
+		(select aptname, dong,max(dealamount)
+		high, min(dealamount) low from
+		housedeal group by dong,aptname) d
 		on
-		i.aptname = d.aptname and i.dong = d.dong
+		i.aptname = d.aptname and i.dong =
+		d.dong
 		where i.dong = #{dongName}
 		order by no desc
 	</select>
-	
-<!-- 		인자: 구 이름 / 결과 : houseinfo -->
-		<select id="getHouseInfoByGu" resultType="houseInfoDto" parameterType="String">
-		select i.no,i.dong,i.aptname,i.code,i.buildyear,i.jibun,i.lat,i.lng,i.img, d.high,d.low
+
+	<!-- 인자: 구 이름 / 결과 : houseinfo -->
+	<select id="getHouseInfoByGu" resultType="houseInfoDto"
+		parameterType="String">
+		select
+		i.no,i.dong,i.aptname,i.code,i.buildyear,i.jibun,i.lat,i.lng,i.img,
+		d.high,d.low
 		from houseinfo i
-		join 
-		(select aptname, dong,max(dealamount) high, min(dealamount) low from housedeal group by dong,aptname) d
+		join
+		(select aptname, dong,max(dealamount)
+		high, min(dealamount) low from
+		housedeal group by dong,aptname) d
 		on
-		i.aptname = d.aptname and i.dong = d.dong
-		where i.dong in (select dong.dong from seouldong dong left join seoulgu gu on dong.gunum = gu.no where gu.guname = #{guName})
-		order by no desc
-		</select>
+		i.aptname = d.aptname and i.dong =
+		d.dong
+		where i.dong in (select
+		dong.dong from seouldong dong left join
+		seoulgu gu on dong.gunum =
+		gu.no where gu.guname = #{guName})
+		order by
+		no desc
+	</select>
+
+	<!-- 인자: 구 / 결과: 학교 -->
+	<select id="getSchoolInfo" parameterType="String"
+		resultType="schoolDto">
+		select
+		schul_nm name,
+		org_telno telno,
+		hmpg_adres homepage,
+		coedu_sc_nm info,
+		hs_gnrl_busns_sc_nm highschoolkind,
+		address,
+		cast(lat
+		as double) lat,
+		cast(lng as double) lng
+		from school where address like
+		'%${selectedGu}%';
+	</select>
+
+	<select id="getCameraPos" parameterType="String"
+		resultType="cameraDto">
+		select cast(lat as double) lat, cast(lng as double) lng
+		from baseaddress where dong like '%${selectedDong}%' and lat != 0 and lng != 0 limit 1;
+	</select>
+
 </mapper>
