@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 import com.ssafy.vue.dao.HouseMapper;
 import com.ssafy.vue.dto.HouseDealDto;
 import com.ssafy.vue.dto.HouseInfoDto;
+import com.ssafy.vue.dto.SchoolDto;
 import com.ssafy.vue.dto.SearchHouseDealDto;
 
 @Service
@@ -58,6 +59,11 @@ public class HouseServiceImpl implements HouseService {
 	@Override
 	public List<HouseInfoDto> getHouseInfoByGu(String guName) {
 		return hdao.getMapper(HouseMapper.class).getHouseInfoByGu(guName);
+	}
+
+	@Override
+	public List<SchoolDto> getSchoolInfo(String selectedGu) {
+		return hdao.getMapper(HouseMapper.class).getSchoolInfo(selectedGu);
 	}	
 
 

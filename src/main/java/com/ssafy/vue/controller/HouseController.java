@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.ssafy.vue.dto.HouseDealDto;
 import com.ssafy.vue.dto.HouseInfoDto;
+import com.ssafy.vue.dto.SchoolDto;
 import com.ssafy.vue.dto.SearchHouseDealDto;
 import com.ssafy.vue.service.HouseService;
 
@@ -93,10 +94,18 @@ public class HouseController {
 	public ResponseEntity<List<String>> getOptionsDong(@PathVariable String selectedGu) {
 		if (selectedGu.equals("null")) {
 			System.out.println("전체 동 가져오기");
-		} else
+		} else {
+			
 			System.out.println(selectedGu + "소속 동 가져오기");
+		}
 
 		return new ResponseEntity<List<String>>(houseService.getOptionsDong(selectedGu), HttpStatus.OK);
 
 	}
+	@GetMapping("/school/{selectedGu}")
+	@ApiOperation(value="구의 학교 정보 반환")
+	public ResponseEntity<List<SchoolDto>> getSchoolInfo(@PathVariable String selectedGu){
+		return new ResponseEntity<List<SchoolDto>>(houseService.getSchoolInfo(selectedGu),HttpStatus.OK);
+	}
+
 }

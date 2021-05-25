@@ -92,4 +92,18 @@
 		where i.dong in (select dong.dong from seouldong dong left join seoulgu gu on dong.gunum = gu.no where gu.guname = #{guName})
 		order by no desc
 		</select>
+		
+<!-- 		인자: 구 / 결과: 학교 -->
+		<select id="getSchoolInfo" parameterType="String" resultType="schoolDto">
+		select 
+        schul_nm name, 
+        org_telno telno, 
+        hmpg_adres homepage, 
+        coedu_sc_nm info, 
+        hs_gnrl_busns_sc_nm highschoolkind, 
+        address, 
+        cast(lat as double) lat,
+        cast(lng as double) lng
+        from school where address like '%${selectedGu}%';
+		</select>
 </mapper>

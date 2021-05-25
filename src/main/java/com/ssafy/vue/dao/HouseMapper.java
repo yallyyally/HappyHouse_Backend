@@ -7,6 +7,7 @@ import org.apache.ibatis.annotations.Mapper;
 
 import com.ssafy.vue.dto.HouseDealDto;
 import com.ssafy.vue.dto.HouseInfoDto;
+import com.ssafy.vue.dto.SchoolDto;
 import com.ssafy.vue.dto.SearchHouseDealDto;
 
 @Mapper
@@ -19,4 +20,5 @@ public interface HouseMapper {
 	public List<String> getAllOptionsDong();
 	public List<HouseInfoDto> getHouseInfoByDong(String dongName);
 	public List<HouseInfoDto> getHouseInfoByGu(String guName);
+	public List<SchoolDto> getSchoolInfo(String selectedGu);
 }
