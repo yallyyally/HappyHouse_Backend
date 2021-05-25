@@ -38,10 +38,10 @@ public class QnaController {
 //	질문 쓰기
 	@PostMapping("/question")
 	@ApiOperation(value="질문 작성 요청")
-	public ResponseEntity insertQuestion(@RequestBody QuestionDto questionDto) {
+	public ResponseEntity<String> insertQuestion(@RequestBody QuestionDto questionDto) {
 		System.out.println("질문 작성 요청 ~");
 		questionService.insertQuestion(questionDto);
-		return new ResponseEntity<>(HttpStatus.OK);
+		return new ResponseEntity<String>(HttpStatus.OK);
 	}
 	
 //	전체 질문 불러오기

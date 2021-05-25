@@ -70,9 +70,10 @@ public class BoardController {
 
     @ApiOperation(value = "글번호에 해당하는 게시글의 정보를 수정한다. 그리고 DB수정 성공여부에 따라 'success' 또는 'fail' 문자열을 반환한다.", response = String.class)
 	@PutMapping("/update/{bno}")
-	public ResponseEntity<String> updateBoard(@RequestBody BoardDto board) {
+	public ResponseEntity<String> updateBoard(@RequestBody BoardDto board, @PathVariable int bno) {
 		logger.debug("updateBoard - 호출");
 		logger.debug("" + board);
+		board.setBno(bno);
 		boardService.updateBoard(board);
 		
 		return new ResponseEntity<String>(SUCCESS, HttpStatus.OK);
