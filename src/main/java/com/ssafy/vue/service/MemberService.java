@@ -14,6 +14,8 @@ public interface MemberService {
 	public MemberDto login(MemberDto member) throws Exception;
 	public int regist(MemberDto member) throws Exception;
 	public int update(MemberDto member) throws Exception;
-	public int delete(MemberDto member) throws Exception;
+//	public int delete(MemberDto member) throws Exception;
 	public String getServerInfo();
+
+	public int delete(String userid);
 }
