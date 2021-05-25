@@ -140,7 +140,7 @@
 
 	<!-- 인자: 구 / 결과: 따릉이 정류장 -->
 	<select id="getPublicBicycle" parameterType="String"
-		resultType="publicbicycleDto">
+		resultType="PublicBicycleDto">
 		select no, name, gugun, address, cast(lat as double) lat, cast(lng as double) lng
 		from publicbicycle 
 		where address like '%${selectedGu}%';
