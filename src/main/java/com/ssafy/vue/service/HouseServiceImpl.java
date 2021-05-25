@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.ssafy.vue.dao.HouseMapper;
+import com.ssafy.vue.dto.CameraDto;
 import com.ssafy.vue.dto.HouseDealDto;
 import com.ssafy.vue.dto.HouseInfoDto;
 import com.ssafy.vue.dto.SchoolDto;
@@ -64,6 +65,11 @@ public class HouseServiceImpl implements HouseService {
 	@Override
 	public List<SchoolDto> getSchoolInfo(String selectedGu) {
 		return hdao.getMapper(HouseMapper.class).getSchoolInfo(selectedGu);
+	}
+
+	@Override
+	public CameraDto getCameraPos(String selectedDong) {
+		return hdao.getMapper(HouseMapper.class).getCameraPos(selectedDong);
 	}	
 
 

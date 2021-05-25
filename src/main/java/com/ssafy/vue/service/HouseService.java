@@ -2,6 +2,7 @@ package com.ssafy.vue.service;
 
 import java.util.List;
 
+import com.ssafy.vue.dto.CameraDto;
 import com.ssafy.vue.dto.HouseDealDto;
 import com.ssafy.vue.dto.HouseInfoDto;
 import com.ssafy.vue.dto.SchoolDto;
@@ -17,4 +18,5 @@ public interface HouseService {
 	public List<HouseInfoDto> getHouseInfoByDong(String dongName);
 	public List<HouseInfoDto> getHouseInfoByGu(String guName);
 	public List<SchoolDto> getSchoolInfo(String selectedGu);
+	public CameraDto getCameraPos(String selectedDong);
 }

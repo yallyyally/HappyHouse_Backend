@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.ssafy.vue.dto.CameraDto;
 import com.ssafy.vue.dto.HouseDealDto;
 import com.ssafy.vue.dto.HouseInfoDto;
 import com.ssafy.vue.dto.SchoolDto;
@@ -70,6 +71,12 @@ public class HouseController {
 	@ApiOperation(value="매물목록 반환 - 구 전체 매물")
 	public ResponseEntity<List<HouseInfoDto>> getHouseInfoByGu(@PathVariable String guName){
 		return new ResponseEntity<List<HouseInfoDto>>(houseService.getHouseInfoByGu(guName),HttpStatus.OK);
+	}
+	
+	@GetMapping("/houseinfo/camera/{selectedDong}")
+	@ApiOperation(value="선택된 동의 카메라 위경도 반환")
+	public ResponseEntity<CameraDto> getCameraPos(@PathVariable String selectedDong){
+		return new ResponseEntity<CameraDto> (houseService.getCameraPos(selectedDong),HttpStatus.OK);
 	}
 	
 //	매물 검색~ -> 특정 가격대의 houseinfo 찾기 위해 join 필요.
