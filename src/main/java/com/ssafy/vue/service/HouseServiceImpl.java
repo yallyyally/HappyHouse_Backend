@@ -12,6 +12,7 @@ import com.ssafy.vue.dao.HouseMapper;
 import com.ssafy.vue.dto.CameraDto;
 import com.ssafy.vue.dto.HouseDealDto;
 import com.ssafy.vue.dto.HouseInfoDto;
+import com.ssafy.vue.dto.PublicBicycleDto;
 import com.ssafy.vue.dto.SchoolDto;
 import com.ssafy.vue.dto.SearchHouseDealDto;
 
@@ -70,6 +71,11 @@ public class HouseServiceImpl implements HouseService {
 	@Override
 	public CameraDto getCameraPos(String selectedDong) {
 		return hdao.getMapper(HouseMapper.class).getCameraPos(selectedDong);
+	}
+
+	@Override
+	public List<PublicBicycleDto> getPublicBicycle(String selectedGu) {
+		return hdao.getMapper(HouseMapper.class).getPublicBicycle(selectedGu);
 	}	
 
 

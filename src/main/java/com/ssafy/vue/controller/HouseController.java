@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.ssafy.vue.dto.CameraDto;
 import com.ssafy.vue.dto.HouseDealDto;
 import com.ssafy.vue.dto.HouseInfoDto;
+import com.ssafy.vue.dto.PublicBicycleDto;
 import com.ssafy.vue.dto.SchoolDto;
 import com.ssafy.vue.dto.SearchHouseDealDto;
 import com.ssafy.vue.service.HouseService;
@@ -115,4 +116,9 @@ public class HouseController {
 		return new ResponseEntity<List<SchoolDto>>(houseService.getSchoolInfo(selectedGu),HttpStatus.OK);
 	}
 
+	@GetMapping("/publicbicycle/{selectedGu}")
+	@ApiOperation(value="구의 따릉이 정류장 정보 반환")
+	public ResponseEntity<List<PublicBicycleDto>> getPublicBicycle(@PathVariable String selectedGu) {
+		return new ResponseEntity<List<PublicBicycleDto>>(houseService.getPublicBicycle(selectedGu),HttpStatus.OK);
+	}
 }

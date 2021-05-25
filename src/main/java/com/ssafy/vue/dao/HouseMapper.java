@@ -8,6 +8,7 @@ import org.apache.ibatis.annotations.Mapper;
 import com.ssafy.vue.dto.CameraDto;
 import com.ssafy.vue.dto.HouseDealDto;
 import com.ssafy.vue.dto.HouseInfoDto;
+import com.ssafy.vue.dto.PublicBicycleDto;
 import com.ssafy.vue.dto.SchoolDto;
 import com.ssafy.vue.dto.SearchHouseDealDto;
 
@@ -22,5 +23,6 @@ public interface HouseMapper {
 	public List<HouseInfoDto> getHouseInfoByDong(String dongName);
 	public List<HouseInfoDto> getHouseInfoByGu(String guName);
 	public List<SchoolDto> getSchoolInfo(String selectedGu);
+	public List<PublicBicycleDto> getPublicBicycle(String selectedGu);
 	public CameraDto getCameraPos(String selectedDong);
 }
