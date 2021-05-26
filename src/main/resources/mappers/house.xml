@@ -133,8 +133,17 @@
 		cast(lng as double) lng
 		from school where address like
 		'%${selectedGu}%';
-	</select>
+	</select> 
 
+	<!-- 인자: 구 / 결과: 유치원 -->
+	<select id="getKindergartenInfo" parameterType="String"
+		resultType="KindergartenDto">
+		select name,ESTABLISH,address,telno,HPADDR,OPERTIME,
+		cast(lat as double) lat, cast(lng as double) lng
+		from kindergarten where address like
+		'%${selectedGu}%';
+	</select>
+	
 	<select id="getCameraPos" parameterType="String"
 		resultType="cameraDto">
 		select cast(lat as double) lat, cast(lng as double) lng

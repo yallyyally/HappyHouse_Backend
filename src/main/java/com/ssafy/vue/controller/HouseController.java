@@ -19,6 +19,7 @@ import com.ssafy.vue.dto.BusDto;
 import com.ssafy.vue.dto.CameraDto;
 import com.ssafy.vue.dto.HouseDealDto;
 import com.ssafy.vue.dto.HouseInfoDto;
+import com.ssafy.vue.dto.KindergartenDto;
 import com.ssafy.vue.dto.PublicBicycleDto;
 import com.ssafy.vue.dto.SchoolDto;
 import com.ssafy.vue.dto.SearchHouseDealDto;
@@ -117,6 +118,12 @@ public class HouseController {
 	@ApiOperation(value="구의 학교 정보 반환")
 	public ResponseEntity<List<SchoolDto>> getSchoolInfo(@PathVariable String selectedGu){
 		return new ResponseEntity<List<SchoolDto>>(houseService.getSchoolInfo(selectedGu),HttpStatus.OK);
+	}
+	
+	@GetMapping("/kindergarten/{selectedGu}")
+	@ApiOperation(value="구의 유치원 정보 반환")
+	public ResponseEntity<List<KindergartenDto>> getKindergartenInfo(@PathVariable String selectedGu){
+		return new ResponseEntity<List<KindergartenDto>>(houseService.getKindergartenInfo(selectedGu),HttpStatus.OK);
 	}
 	
 	@GetMapping("/subway/{selectedGu}")
