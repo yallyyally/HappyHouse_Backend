@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.ssafy.vue.dto.BusDto;
 import com.ssafy.vue.dto.CameraDto;
 import com.ssafy.vue.dto.HouseDealDto;
 import com.ssafy.vue.dto.HouseInfoDto;
@@ -117,16 +118,22 @@ public class HouseController {
 	public ResponseEntity<List<SchoolDto>> getSchoolInfo(@PathVariable String selectedGu){
 		return new ResponseEntity<List<SchoolDto>>(houseService.getSchoolInfo(selectedGu),HttpStatus.OK);
 	}
+	
 	@GetMapping("/subway/{selectedGu}")
 	@ApiOperation(value = "선택된 구의 지하철 정보")
 	public ResponseEntity<List<SubwayDto>> getSubwayInfo(@PathVariable String selectedGu){
 		return new ResponseEntity<List<SubwayDto>>(houseService.getSubwayInfo(selectedGu),HttpStatus.OK);
 	}
 	
-
+	@GetMapping("/bus/{selectedGu}")
+	@ApiOperation(value = "선택된 구의 버스 정보")
+	public ResponseEntity<List<BusDto>> getBusInfo(@PathVariable String selectedGu){
+		return new ResponseEntity<List<BusDto>>(houseService.getBusInfo(selectedGu),HttpStatus.OK);
+	}
+	
 	@GetMapping("/publicbicycle/{selectedGu}")
 	@ApiOperation(value="구의 따릉이 정류장 정보 반환")
-	public ResponseEntity<List<PublicBicycleDto>> getPublicBicycle(@PathVariable String selectedGu) {
-		return new ResponseEntity<List<PublicBicycleDto>>(houseService.getPublicBicycle(selectedGu),HttpStatus.OK);
+	public ResponseEntity<List<PublicBicycleDto>> getPublicBicycleInfo(@PathVariable String selectedGu) {
+		return new ResponseEntity<List<PublicBicycleDto>>(houseService.getPublicBicycleInfo(selectedGu),HttpStatus.OK);
 	}
 }

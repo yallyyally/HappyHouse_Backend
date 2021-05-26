@@ -5,6 +5,7 @@ import java.util.Map;
 
 import org.apache.ibatis.annotations.Mapper;
 
+import com.ssafy.vue.dto.BusDto;
 import com.ssafy.vue.dto.CameraDto;
 import com.ssafy.vue.dto.HouseDealDto;
 import com.ssafy.vue.dto.HouseInfoDto;
@@ -24,7 +25,8 @@ public interface HouseMapper {
 	public List<HouseInfoDto> getHouseInfoByDong(String dongName);
 	public List<HouseInfoDto> getHouseInfoByGu(String guName);
 	public List<SchoolDto> getSchoolInfo(String selectedGu);
-	public List<PublicBicycleDto> getPublicBicycle(String selectedGu);
+	public List<PublicBicycleDto> getPublicBicycleInfo(String selectedGu);
 	public CameraDto getCameraPos(String selectedDong);
 	public List<SubwayDto> getSubwayInfo(String selectedGu);
+	public List<BusDto> getBusInfo(String selectedGu);
 }

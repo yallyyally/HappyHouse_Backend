@@ -150,10 +150,18 @@
 		from subway
 		where address like '%${selectedGu}%'
 	</select>
+	
+	<!-- 인자: 구 / 결과 : 버스 -->
+	<select id="getBusInfo" parameterType="String"
+		resultType="busDto">
+		select no, name, cast(lat as double)lng, cast(lng as double) lat, address
+		from bus
+		where address like '%${selectedGu}%'
+	</select>
 
 	<!-- 인자: 구 / 결과: 따릉이 정류장 -->
-	<select id="getPublicBicycle" parameterType="String"
-		resultType="PublicBicycleDto">
+	<select id="getPublicBicycleInfo" parameterType="String"
+		resultType="publicbicycleDto">
 		select no, name, gugun, address, cast(lat as double) lat, cast(lng as double) lng
 		from publicbicycle 
 		where address like '%${selectedGu}%';
