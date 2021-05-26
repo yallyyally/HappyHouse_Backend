@@ -1,0 +1,54 @@
+<디비>
+
+회원정보 / 게시글 / 댓글 / 큐앤에이 / 인구수 / 매물 / E따릉이 / 문화공간 / 학교 
+
+커맨드에서 mysql > server > bin 폴더로 이동해서 아래의 명령어 실행 
+mysql -h localhost -P 3306 --local_infile=1 -u root -p
+set global local_infile=1;
+
+- 매물주소
+LOAD DATA LOCAL INFILE "C:/Users/llgyw/Desktop/final_DB/baseaddress.csv"
+INTO TABLE happyhouse.baseaddress FIELDS TERMINATED BY ",";
+
+- 매물
+housedeal_error 파일 실행
+
+- 매물
+LOAD DATA LOCAL INFILE "C:/Users/llgyw/Desktop/final_DB/houseinfo.csv"
+INTO TABLE happyhouse.houseinfo FIELDS TERMINATED BY ",";
+
+- 지하철
+LOAD DATA LOCAL INFILE "C:/Users/llgyw/Desktop/final_DB/subway.csv"
+INTO TABLE happyhouse.subway FIELDS TERMINATED BY ",";
+
+- 버스
+LOAD DATA LOCAL INFILE "C:/Users/llgyw/Desktop/final_DB/bus.csv"
+INTO TABLE happyhouse.bus FIELDS TERMINATED BY ",";
+
+- 따릉이
+LOAD DATA LOCAL INFILE "C:/Users/llgyw/Desktop/final_DB/publicbicycle.csv"
+INTO TABLE happyhouse.publicbicycle FIELDS TERMINATED BY ",";
+
+- 학교
+LOAD DATA LOCAL INFILE "C:/Users/llgyw/Desktop/final_DB/school.csv"
+INTO TABLE happyhouse.school FIELDS TERMINATED BY ",";
+
+- 유치원
+LOAD DATA LOCAL INFILE "C:/Users/llgyw/Desktop/final_DB/kindergarten.csv"
+INTO TABLE happyhouse.kindergarten FIELDS TERMINATED BY ",";
+
+- 문화공간
+LOAD DATA LOCAL INFILE "C:/Users/llgyw/Desktop/final_DB/culturalspace.csv"
+INTO TABLE happyhouse.culturalspace FIELDS TERMINATED BY ",";
+
+- 도서관
+LOAD DATA LOCAL INFILE "C:/Users/llgyw/Desktop/final_DB/library.csv"
+INTO TABLE happyhouse.library FIELDS TERMINATED BY ",";
+
+- 상권
+LOAD DATA LOCAL INFILE "C:/Users/llgyw/Desktop/final_DB/commercialzone.csv"
+INTO TABLE happyhouse.commercialzone FIELDS TERMINATED BY ",";
+
+- 인구
+LOAD DATA LOCAL INFILE "C:/Users/llgyw/Desktop/final_DB/population.csv"
+INTO TABLE happyhouse.population FIELDS TERMINATED BY ",";
