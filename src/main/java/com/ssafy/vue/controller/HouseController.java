@@ -156,23 +156,19 @@ public class HouseController {
 	}
 
 	@GetMapping("/route")
-	@ApiOperation(value = "경로정보 제발")
+	@ApiOperation(value = "두 지점 사이 이동 정보")
 	public ResponseEntity<RouteDto> getRouteInfo(@RequestParam("start") String start, @RequestParam("goal") String goal) throws IOException {
-//		1. url 사용하여 요청 객체 생성
+//		 url 사용하여 요청 객체 생성
 		System.out.println("전해받은 파라미터 " + start+"/"+goal);
-		System.out.println("큰따옴표떼줫던듯?");
 		URL url = new URL("https://naveropenapi.apigw.ntruss.com/map-direction-15/v1/driving?start=" + start+"&goal="+goal);
 		HttpURLConnection con = (HttpURLConnection) url.openConnection();
 		con.setRequestMethod("GET");
 
-//		parameter 전달-> 이미 문자열에 집어넣엇음.생략.
 //		header -> api 키 정보.
 		con.setRequestProperty("X-NCP-APIGW-API-KEY-ID", "ynpr8dsf9h");
 		con.setRequestProperty("X-NCP-APIGW-API-KEY", "DH66Nok2B5ETB3rgwHoInUktdi8U0ztwlPUAL17I");
-		System.out.println("헤더확인 ynr어쩌구 오면댐 " + con.getHeaderField("X-NCP-APIGW-API-KEY-ID"));
-//		이게 null인데 왜 되는겨?????
 
-//		값을 읽어보쟈~
+//		값을 읽어보자~
 		System.out.println("성공? 400뜨면 가만안도" + con.getResponseCode());
 		BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
 		String inputLine;
@@ -190,16 +186,18 @@ public class HouseController {
 //		데이터를 json으로 파싱해보즈ㅏ
 //		에러남: org.json 설치 -> 에러 ->버전문제 해결 -> 에러: 메이븐 업데이트.
 		JSONObject jObject = new JSONObject(content.toString());
-//		요약정보.
-		System.out.println("성공했니? "+jObject.getString("message"));
-//		객체의 객체의.con..반복
+
 		jObject = jObject.getJSONObject("route");
+		
 //		에러: obj가 아니구 array
 //		jObject = jObject.getJSONObject("traoptimal");
 		JSONArray tmp =jObject.getJSONArray("traoptimal");
 
 		jObject = tmp.getJSONObject(0).getJSONObject("summary");
+		
+//		@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 //		이동시간, 이동거리, 톨게이트 요금, 택시 요금 파싱!
+//		@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 		int duration = jObject.getInt("duration");
 		System.out.println("이동시간 "+duration);
 		
@@ -207,6 +205,7 @@ public class HouseController {
 		System.out.println("이동거리 "+distance);
 		
 		int tollFare = jObject.getInt("tollFare");
+
 		System.out.println("톨게이트욕므 "+tollFare);
 		
 		int taxiFare = jObject.getInt("taxiFare");
