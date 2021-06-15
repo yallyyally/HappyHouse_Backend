@@ -85,7 +85,7 @@
 
 ---
 
-## 기능 세부 
+## 기능 설계 세부사항
 
 
 ![Untitled_32](https://user-images.githubusercontent.com/44567793/122081348-fd1e2100-ce39-11eb-897d-db7fdadaefa9.png)
