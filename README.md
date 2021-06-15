@@ -59,9 +59,12 @@
 ![Untitled_23](https://user-images.githubusercontent.com/44567793/122081211-dfe95280-ce39-11eb-8582-efeef5478880.png)
 ### - 매물정보 - 지역별 매물
 ![Untitled_24](https://user-images.githubusercontent.com/44567793/122081320-f8f20380-ce39-11eb-8758-cfc2630027ba.png)
+
 - 원하는 시와 동을 선택시 매물 리스트와 교통(지하철, 버스, 따릉이) 정보 및 교육(학교, 유치원) 정보가 마커로 지도에 표시된다.
+
 ![Untitled_25](https://user-images.githubusercontent.com/44567793/122081332-fabbc700-ce39-11eb-813d-ef226736ad5b.png)
 ![Untitled_26](https://user-images.githubusercontent.com/44567793/122081335-fabbc700-ce39-11eb-81c8-66db12c73591.png)
+
 - 매물리스트에서 매물을 선택하면 상세 정보 및 거래 내역을 차트로 제공한다.
 
 ### - 매물정보 - 매물별 길찾기
