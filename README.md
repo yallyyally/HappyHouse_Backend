@@ -1,4 +1,6 @@
 # 🏡 Happy House 
+[Frontend](https://github.com/yallyyally/HappyHouse_Frontend) / [Backend](https://github.com/yallyyally/HappyHouse_Backend)
+
 ## 프로젝트 기획
 
 ![1](https://user-images.githubusercontent.com/44567793/122078454-90a22280-ce37-11eb-8106-6c25ab5b2b50.png)
